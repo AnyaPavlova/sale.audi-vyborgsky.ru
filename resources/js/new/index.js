@@ -16,3 +16,22 @@ $(window).scroll(() => {
         $('header').css({position: 'static'});
     }
 });
+
+var burger = document.querySelector('.burger');
+burger.addEventListener('click', MobBurger);
+function MobBurger(event) {
+  $('.header-mob__info').slideToggle('300');
+  $('.mob-menu-nav').slideToggle('300');
+}
+var submenuBtn = document.querySelectorAll('.mob-menu-nav__link--hassub');
+if(submenuBtn.length !== 0 ){
+  for(var i=0; i<submenuBtn.length; i++) {
+    submenuBtn[i].addEventListener('click', openSubMenu);
+  }
+  function openSubMenu(event) {
+    event.preventDefault();
+    this.classList.toggle('mob-menu-nav__link--active');
+    var currentItem = this.closest('.mob-menu-nav__item').querySelector('.mob-submenu');
+    $(currentItem).slideToggle(300);
+  }
+}

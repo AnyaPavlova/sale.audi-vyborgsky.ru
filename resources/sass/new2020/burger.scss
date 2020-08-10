@@ -1,0 +1,10 @@
+.burger {
+  display: none;
+
+  @media (max-width: 1199.98px) {
+    display: block;
+    width: 22px;
+    height: 13px;
+    background: url(../img/icons/burger.png) no-repeat;
+  }
+}

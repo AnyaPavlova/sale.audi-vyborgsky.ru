@@ -1,0 +1,157 @@
+.header {
+  padding: 19px 0;
+}
+.header__content {
+  justify-content: space-between;
+}
+.header__audi {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  align-items: center;
+}
+.header__audi-name {
+  padding-left: 19px;
+  line-height: 17px;
+}
+.header__btn-call {
+  font-size: 14px;
+  letter-spacing: -0.01em;
+  padding: 11px 24px;
+  border: 1px solid #000000;
+  transition: all 0.5s;
+  background-color: transparent;
+  cursor: pointer;
+  outline: none;
+
+  &:hover {
+    background-color: #000000;
+    color: #ffffff;
+  }
+}
+.header__item-cars:before {
+  content: '';
+  width: 15px;
+  height: 10px;
+  background: url(../img/icons/car.png) no-repeat;
+  left: -20px;
+  top: 0; bottom: 0;
+  margin: auto;
+}
+.header__item-phone:before {
+  content: '';
+  width: 10px;
+  height: 13px;
+  left: -15px;
+  top: 0; bottom: 0;
+  margin: auto;
+  background: url("../img/phone.png") no-repeat;
+  background-size: contain;
+}
+.header__item-map:before {
+  content: '';
+  content: '';
+  width: 13px;
+  height: 13px;
+  left: -15px;
+  top: 0; bottom: 0;
+  margin: auto;
+  background: url("../img/poi-small.png") no-repeat;
+  background-size: contain;
+}
+.header__small {
+  color: #707070;
+
+  &--black {
+    color: #000000;
+  }
+}
+.header__icon {
+  font-size: 15px;
+  letter-spacing: -0.01em;
+  font-weight: 700;
+}
+.header__logo {
+  font-size: 15px;
+}
+.model-menu__item a {
+  font-family: AudiTNormal;
+  color: #ffffff;
+  letter-spacing: -0.01em;
+  font-size: 15px;
+}
+.model-menu__item--active a {
+  font-family: AudiTNormal;
+  border-bottom: 1px solid #ffffff;
+  font-weight: 700;
+}
+.model-menu__item a:hover {
+  opacity: 0.8;
+}
+
+@media (max-width: 1199.98px) {
+  .header {
+    padding: 13px 20px 13px 13px;
+  }
+  .header-mob {
+    padding: 0;
+  }
+  .header__btn-block,
+  .header__address,
+  .header__cars {
+    display: none;
+  }
+  .models-block {
+    display: none;
+  }
+  .header__audi img {
+    width: 75px;
+  }
+  .header__logo {
+    font-size: 13px;
+    line-height: 1.2;
+  }
+  .header__audi-name {
+    padding-left: 10px;
+  }
+  .header-mob__main {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    align-content: center;
+    align-items: center;
+  }
+  .header-mob__info {
+    text-align: left;
+    padding-top: 13px;
+    display: none;
+  }
+  .header-mob__block {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .header__phone {
+    align-content: flex-end;
+    align-items: flex-end;
+  }
+  .header__icon {
+    font-size: 13px;
+  }
+  .header__small {
+    font-size: 11px;
+    padding-bottom: 3px;
+  }
+  .header__item-phone:before {
+    display: none;
+  }
+  .header-mob__btn {
+    font-size: 11px;
+    color: #ffffff;
+    padding: 9px 15px;
+    background: #000000;
+  }
+}

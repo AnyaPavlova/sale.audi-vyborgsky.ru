@@ -21,77 +21,117 @@
 
 </head>
 <header class="header header_fixed" style="position: static; top: 0px; left: 0px; right: 0px; margin: 0px auto;">
-    <div class="main__container header-desctop">
-        <div class="row header__content">
-            <div class="col-xl-4 col-md-6 header__item header_logo_left">
-                <a href="https://sale.audi-vyborgsky.ru/">
-                    <!--<img src="img/logo_left.png"/>-->
-                    <span class="header__logo red">Ауди</span>
-                    <br>
-                    <span class="header__logo">Центр Выборгский</span>
-                </a>
-            </div>
-            <div class="col-xl-2 header__item header__phone">
-              <small class="header__small">с 9:00 до 21:00</small>
-              <a href="tel:+78125011334" class="header__item-phone header__icon">+7 (812) 501-13-34</a>
-            </div>
-            <div class="col-xl-2 header__item header__address">
-                <small class="header__small">Официальный дилер Audi</small>
-                <a href="https://sale.audi-vyborgsky.ru/#" class="header__item-map header__icon">Выборгское шоссе, д.
-                    352 лит. А</a>
-            </div>
-            <div class="col-xl-4 header__item header_logo_right">
-                <img src="./image/logo_right.png">
+        <div class="main__container header-desctop">
+            <div class="row header__content">
+                <div class="header__item header_logo_left">
+                    <a href="https://sale.audi-vyborgsky.ru/" class="header__audi">
+                        <img src="./img/logo_right.png" />
+                        <div class="header__audi-name">
+                            <span class="header__logo">Ауди</span>
+                            <br>
+                            <span class="header__logo">Центр Выборгский</span>
+                        </div>
+                    </a>
+                </div>
+                <div class="header__item header__btn-block">
+                    <button data-src="#callback" data-fancybox="" class="header__btn-call">Обратный звонок</button>
+                </div>
+                <div class="header__item header__address">
+                    <small class="header__small header__small--black">Официальный дилер Audi</small>
+                    <a href="https://sale.audi-vyborgsky.ru/#" class="header__item-map header__icon">Выборгское шоссе, д.
+                        352 лит. А</a>
+                </div>
+                <div class="header__item header__cars">
+                    <small class="header__small">Всего в наличии:</small>
+                    <a href="https://sale.audi-vyborgsky.ru/#" class="header__item-cars header__icon">345 автомобилей</a>
+                </div>
+                <div class="header__item header__phone">
+                    <small class="header__small">с 9:00 до 21:00</small>
+                    <a href="tel:+78125011334" class="header__item-phone header__icon">+7 (812) 501-13-34</a>
+                </div>
             </div>
         </div>
-    </div>
-    <div class="header-mob">
-        <div class="header-mob__top">
-            <div class="header-mob__logo"><img src="img/logo_right.png"></div>
-            <div class="header-mob__phone"><a href="tel:+78125011334">+7 (812) 501-13-34</a></div>
-        </div>
-        <div class="header-mob__bottom">
-            <div class="header-mob__title">
-                <a href="https://sale.audi-vyborgsky.ru/">
-                    <span class="header__logo red">Ауди</span>
-                    <br>
-                    <span class="header__logo">Центр Выборгский</span>
+        <div class="header-mob">
+            <div class="header-mob__main">
+                <a href="https://sale.audi-vyborgsky.ru/" class="header__audi">
+                    <img src="./img/logo_right.png" />
+                    <div class="header__audi-name">
+                        <span class="header__logo">Ауди</span>
+                        <br>
+                        <span class="header__logo">Центр Выборгский</span>
+                    </div>
                 </a>
+                <span id="burger" class="burger"></span>
+
             </div>
             <div class="header-mob__info">
-                <div class="header-mob__time">с 9:00 до 21:00</div>
-                <div class="header-mob__map"><a target="_blank"
-                                                href="https://yandex.ru/maps/2/saint-petersburg/?z=10&amp;ll=30.350098%2C59.955797&amp;l=map&amp;origin=jsapi_2_1_56&amp;from=api-maps&amp;um=constructor%3Af5815019cca57f289da79a7df1f581457df563ea9740ddfa6f47acc9c4a17f68&amp;mode=routes&amp;rtext=~60.094032%2C30.254255&amp;rtt=auto">Проложить
-                    маршрут</a></div>
+                <div class="header-mob__block">
+                    <a class="header-mob__btn" target="_blank" href="https://yandex.ru/maps/2/saint-petersburg/?z=10&amp;ll=30.350098%2C59.955797&amp;l=map&amp;origin=jsapi_2_1_56&amp;from=api-maps&amp;um=constructor%3Af5815019cca57f289da79a7df1f581457df563ea9740ddfa6f47acc9c4a17f68&amp;mode=routes&amp;rtext=~60.094032%2C30.254255&amp;rtt=auto">Проложить маршрут</a>
+                    <div class="header__item header__phone">
+                        <small class="header__small">с 9:00 до 21:00</small>
+                        <a href="tel:+78125011334" class="header__item-phone header__icon">+7 (812) 501-13-34</a>
+                    </div>
+                </div>
             </div>
+
         </div>
-    </div>
-</header>
-<div class="model-menu">
-    <div class="model-menu__inner">
-        <ul class="model-menu__models showcase__models showcase-audi__models">
-            <!--            <li class="showcase__model-item model-menu__item model-menu__model-row"><a href="#">Модельный ряд</a></li>-->
-            <li class="showcase__model-item model-menu__item ">
-                <a href="https://sale.audi-vyborgsky.ru/model/a3-sedan">A3 Sedan</a></li>
-            <li class="showcase__model-item model-menu__item ">
-                <a href="https://sale.audi-vyborgsky.ru/model/a6">A6</a></li>
-            <li class="showcase__model-item model-menu__item ">
-                <a href="https://sale.audi-vyborgsky.ru/model/a7">A7</a></li>
-            <li class="showcase__model-item model-menu__item ">
-                <a href="https://sale.audi-vyborgsky.ru/model/a8-l">A8 L</a></li>
-            <li class="showcase__model-item model-menu__item ">
-                <a href="https://sale.audi-vyborgsky.ru/model/q3-1">Q3</a></li>
-            <li class="showcase__model-item model-menu__item ">
-                <a href="https://sale.audi-vyborgsky.ru/model/q3-sportback">Q3 Sportback</a></li>
-            <li class="showcase__model-item model-menu__item ) model-menu__item--active ">
-                <a href="https://sale.audi-vyborgsky.ru/model/q5">Q5</a></li>
-            <li class="showcase__model-item model-menu__item ">
-                <a href="https://sale.audi-vyborgsky.ru/model/q7">Q7</a></li>
-            <li class="showcase__model-item model-menu__item ">
-                <a href="https://sale.audi-vyborgsky.ru/model/q8">Q8</a></li>
+    </header>
+    <div class="mob-menu-nav">
+        <ul class="mob-menu-nav__list">
+            <li class="mob-menu-nav__item"><a href="index.html" class="mob-menu-nav__link">Главная страница</a></li>
+            <li class="mob-menu-nav__item">
+                <span class="mob-menu-nav__link mob-menu-nav__link--hassub"><span class="btn-submenu">Выберите модель</span></span>
+                <ul class="mob-submenu">
+                    <li class="mob-submenu__item">
+                        <a class="mob-submenu__link" href="https://sale.audi-vyborgsky.ru/model/a3-sedan">A3 Sedan</a></li>
+                    <li class="mob-submenu__item">
+                        <a class="mob-submenu__link" href="https://sale.audi-vyborgsky.ru/model/a6">A6</a></li>
+                    <li class="mob-submenu__item">
+                        <a class="mob-submenu__link" href="https://sale.audi-vyborgsky.ru/model/a7">A7</a></li>
+                    <li class="mob-submenu__item">
+                        <a class="mob-submenu__link" href="https://sale.audi-vyborgsky.ru/model/a8-l">A8 L</a></li>
+                    <li class="mob-submenu__item">
+                        <a class="mob-submenu__link" href="https://sale.audi-vyborgsky.ru/model/q3-1">Q3</a></li>
+                    <li class="mob-submenu__item">
+                        <a class="mob-submenu__link" href="https://sale.audi-vyborgsky.ru/model/q3-sportback">Q3 Sportback</a></li>
+                    <li class="mob-submenu__item">
+                        <a class="mob-submenu__link" href="https://sale.audi-vyborgsky.ru/model/q5">Q5</a></li>
+                    <li class="mob-submenu__item">
+                        <a class="mob-submenu__link" href="https://sale.audi-vyborgsky.ru/model/q7">Q7</a></li>
+                    <li class="mob-submenu__item">
+                        <a class="mob-submenu__link" href="https://sale.audi-vyborgsky.ru/model/q8">Q8</a></li>
+                </ul>
+            </li>
+            <li class="mob-menu-nav__item"><a href="" class="mob-menu-nav__link">Контакты</a></li>            
         </ul>
     </div>
-</div>
+<section class="models-block">
+        <div class="model-menu">
+            <div class="model-menu__inner">
+                <ul class="model-menu__models showcase__models showcase-audi__models">
+                    <!--            <li class="showcase__model-item model-menu__item model-menu__model-row"><a href="#">Модельный ряд</a></li>-->
+                    <li class="showcase__model-item model-menu__item ">
+                        <a href="https://sale.audi-vyborgsky.ru/model/a3-sedan">A3 Sedan</a></li>
+                    <li class="showcase__model-item model-menu__item ">
+                        <a href="https://sale.audi-vyborgsky.ru/model/a6">A6</a></li>
+                    <li class="showcase__model-item model-menu__item ">
+                        <a href="https://sale.audi-vyborgsky.ru/model/a7">A7</a></li>
+                    <li class="showcase__model-item model-menu__item ">
+                        <a href="https://sale.audi-vyborgsky.ru/model/a8-l">A8 L</a></li>
+                    <li class="showcase__model-item model-menu__item ">
+                        <a href="https://sale.audi-vyborgsky.ru/model/q3-1">Q3</a></li>
+                    <li class="showcase__model-item model-menu__item ">
+                        <a href="https://sale.audi-vyborgsky.ru/model/q3-sportback">Q3 Sportback</a></li>
+                    <li class="showcase__model-item model-menu__item model-menu__item--active">
+                        <a href="https://sale.audi-vyborgsky.ru/model/q5">Q5</a></li>
+                    <li class="showcase__model-item model-menu__item ">
+                        <a href="https://sale.audi-vyborgsky.ru/model/q7">Q7</a></li>
+                    <li class="showcase__model-item model-menu__item ">
+                        <a href="https://sale.audi-vyborgsky.ru/model/q8">Q8</a></li>
+                </ul>
+            </div>
+        </div>
+    </section>
 <section class="model-banner ">
 
     <div class="item__carousel">
@@ -105,7 +145,7 @@
                     <h1 class="promo-banner__title"></h1>
                     <p class="model-banner__credit">Впечатляющие условия на Audi Q5</p>
                     <p class="model-banner__subtitle">Воспользуйтесь мощными преимуществами</p>
-                    <div class="promo-banner__form">
+                    <!-- <div class="promo-banner__form">
 
                         <form method="post" class="form promo-form" action="https://sale.audi-vyborgsky.ru/send">
                             <input type="hidden" name="_token" value="sOZPvCPydBBkfgqbWgM7aB9AFzdgjO626RIiafLj">
@@ -131,7 +171,7 @@
                             </div>
                         </form>
 
-                    </div>
+                    </div> -->
                 </div>
 
 

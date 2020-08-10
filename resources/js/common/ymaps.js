@@ -13,6 +13,7 @@ if (ymaps) {
             }
         });
         myMap.geoObjects.add(audiObject);
+        myMap.behaviors.disable('scrollZoom');
         if (window.innerWidth < 800) {
             myMap.behaviors.disable('drag');
         }
