@@ -1,0 +1,71 @@
+.model-banner {
+  background-color: transparent;
+  padding-bottom: 0;
+}
+.model-banner__bottom-block {
+  padding-top: 20px;
+  border-top: 1px solid #ffffff;
+  bottom: 20px;
+      left: 0;
+    right: 0;
+    margin: auto;
+    width: calc(100% - 100px);
+}
+.model-banner__mob {
+  display: none;
+}
+.model-banner__title {
+  position: absolute;
+  left: 50px;
+  font-size: 35px;
+  line-height: 40px;
+  letter-spacing: -0.01em;
+  color: #ffffff;
+  top: 60px;
+  font-family: AudiTEBold;
+}
+.model-banner--no-text .model-banner__title {
+  opacity: 0;
+}
+@media (max-width: 1199.98px) {
+  .model-banner__info  {
+    display: none;
+  }
+  .model-banner__title {
+    position: relative;
+    left: auto;
+    top: auto;
+    background: #000000;
+    padding: 15px 20px;
+    font-size: 21px;
+    line-height: 23px;
+    
+    color: #ffffff;
+    margin: 0;
+  }
+  .model-banner--no-text .model-banner__title {
+    position: absolute;
+  }
+}
+@media (max-width: 576px)  {
+  .model-banner__bg {
+    display: none;
+  }
+  .model-banner__mob {
+    display: block;
+    position: relative;
+  }
+  .model-banner__mob-photo {
+    width: 100%;
+    display: block;
+  }
+  .model-banner__title {
+    font-size: 14px;
+    line-height: 14px;
+    padding: 15px 10px;
+  }
+  .model-banner--no-text .model-banner__title {
+    position: relative;
+    opacity: 1;
+  }
+}

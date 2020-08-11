@@ -155,3 +155,16 @@
     background: #000000;
   }
 }
+.btn {
+  outline: none;
+}
+.link-contact {
+  opacity: 0;
+  width: 0;
+  height: 0;
+  display: none;
+
+  @media (max-width: 1199.98px)  {
+    display: block;
+  }
+}

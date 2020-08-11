@@ -7,14 +7,18 @@ require("../common/form");
 require("../chunk/disclaimer");
 require("../chunk/forIE/imageloader");
 require("./showcase");
+require("./jquerycountdown");
+// require("./timer");
 
 var HeaderTop = $('header').offset().top;
 $(window).scroll(() => {
-    if ($(window).scrollTop() > HeaderTop) {
-        $('header').css({position: 'fixed', top: '0px', left: '0px', right: '0px', margin: '0 auto'});
-    } else {
-        $('header').css({position: 'static'});
-    }
+  if ($(window).scrollTop() > HeaderTop) {
+    $('header').css({position: 'fixed', top: '0px', left: '0px', right: '0px', margin: '0 auto'});
+    $('.mob-menu-nav').css({position: 'fixed', top: '104px', left: '0px', right: '0px', margin: '0 auto'});
+  } else {
+    $('header').css({position: 'static'});
+    $('.mob-menu-nav').css({position: 'static'});
+  }
 });
 
 var burger = document.querySelector('.burger');
@@ -35,3 +39,16 @@ if(submenuBtn.length !== 0 ){
     $(currentItem).slideToggle(300);
   }
 }
+
+$('.link-anchor').on("click", function (e) {
+  e.preventDefault();
+  var mylink = $(this).attr('href');
+  MobBurger();
+  if ($(window).scrollTop() > HeaderTop) {
+    var positionblock = $(mylink).offset().top - 60;
+  } else {
+    var positionblock = $(mylink).offset().top - $('.header').outerHeight() - $('.mob-menu-nav').outerHeight() - 60;
+  }
+  $('html, body').animate({ scrollTop: positionblock }, 1100);
+  
+});

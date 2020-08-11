@@ -1,0 +1,243 @@
+.sale-car {
+
+  &__inner {
+    position: relative;
+    // max-width: 1440px;
+    max-width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    padding: 0;
+
+    &:after {
+      content: "";
+      display: block;
+      clear: both;
+    }
+  }
+
+  &__row {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  &__col-photo {
+    width: 44%;
+
+    @media (max-width: 991px) {
+      width: 100%;
+    }
+  }
+  &__col-info {
+    width: 56%;
+
+    @media (max-width: 991px) {
+      width: 100%;
+    }
+  }
+
+  &__photo-block {
+    width: 100%;
+    height: 100%;
+    position: relative;
+
+    @media (max-width: 991px) {
+      height: auto;
+    }
+  }
+  &__photo {
+    width: 100%;
+    display: block;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    top: 0;
+    right: 0;
+    height: 100%;
+    object-fit: cover;
+
+    @media (max-width: 991px) {
+      position: relative;
+      left: auto; right: auto;
+      top: auto; bottom: auto;
+    }
+  }
+
+  &__title {
+    padding: 23px 30px 23px;
+    background: #ffffff;
+    font-size: 30px;
+    line-height: 1.1;
+    font-family: AudiTEBold;
+
+    @media (max-width: 991px) {
+      display: none;
+    }
+  }
+  &__info-block {
+    padding: 20px 30px 15px;
+    background: #eeeeee;
+
+    @media (max-width: 576px) {
+      padding: 15px 30px 63px;
+    }
+  }
+  &__info-block-inner {
+    width: 700px;
+    max-width: 100%;
+
+    @media (max-width: 991px) {
+      margin: auto;
+    }
+  }
+  &__name-block {
+    padding-bottom: 25px;
+
+    @media (max-width: 576px) {
+      padding-bottom: 15px;
+    }
+  }
+  &__name {
+    font-size: 25px;
+    font-family: AudiTEBold;
+    letter-spacing: -0.01em;    
+
+    @media (max-width: 576px) {
+      font-size: 15px;
+    }
+  }
+  &__price {
+    font-size: 15px;
+    font-family: AudiTEBold;
+    letter-spacing: -0.01em;
+    padding-left: 10px;
+
+    @media (max-width: 576px) {
+      font-size: 11px;
+      padding-left: 5px;
+    }
+  }
+
+  &__item-row,
+  &__item-small-row {
+    display: flex;
+
+    @media (max-width: 576px) {
+      flex-wrap: wrap;
+    }
+  }
+
+  &__item-col {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  &__item-col--small {
+    width: 39%;
+
+    @media (max-width: 576px) {
+      width: 50%;
+      box-sizing: border-box;
+      padding-right: 10px;
+    }
+  }
+  &__item-col--large {
+    width: 61%;
+
+    @media (max-width: 576px) {
+      width: 50%;
+    }
+  }
+  &__item-small-col--left {
+    width: 152px;
+
+    @media (max-width: 576px) {
+      width: 100%;
+    }
+  }
+  &__item-small-col--right {
+    width: calc( 100% - 152px );
+
+    @media (max-width: 576px) {
+      width: 100%;
+    }
+  }
+
+  &__btn-block {
+    margin-bottom: 20px;
+
+    @media (max-width: 576px) {
+      margin-bottom: 0;
+      position: absolute;
+      bottom: 21px;
+      left: 0; right: 0;
+      margin: auto;
+      text-align: center;
+    }
+  }
+  &__btn {
+    font-family: AudiTEBold;
+    width: 288px;
+    text-align: center;
+    max-width: 100%;
+    padding: 17px 28px;
+
+    @media (max-width: 576px) {
+      width: 180px;
+      padding: 10px 20px;
+      font-size: 10px;
+    }
+  }
+
+  &__parameter-item {
+    padding-bottom: 20px;
+    box-sizing: border-box;
+    padding-right: 20px;
+
+    @media (max-width: 576px) {
+      padding-bottom: 10px;
+      padding-right: 0;
+    }
+  }
+  &__parameter-name {
+    display: block;
+    font-size: 15px;
+    line-height: 1;
+    color: #777777;
+    padding-bottom: 6px;
+
+    @media (max-width: 576px) {
+      font-size: 10px;
+      padding-bottom: 3px;
+    }
+  }
+  &__parameter-info {
+    display: block;
+    font-size: 18px;
+    line-height: 1.2;
+    color: #000;
+
+    @media (max-width: 576px) {
+      font-size: 12px;
+    }
+  }
+
+  &__mob-title {
+    display: none;
+
+    @media (max-width: 991px) {
+      display: block;
+      padding: 23px 30px 23px;
+      text-align: center;
+      background: #ffffff;
+      font-size: 21px;
+      line-height: 1.1;
+      font-family: AudiTEBold;
+    }
+
+    @media (max-width: 576px) {
+      padding: 10px 15px;
+      font-size: 14px;
+    }
+  }
+}

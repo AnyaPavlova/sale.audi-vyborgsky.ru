@@ -1,0 +1,48 @@
+.timer {
+  padding: 22px 0;
+  background: #cecece;
+
+  @media (max-width: 576px) {
+    padding: 10px 0;
+  }
+
+  &__row {
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+
+    @media (max-width: 576px) {
+      flex-wrap: wrap;
+    }
+  }
+  &__col--title {
+    display: flex;
+    justify-content: flex-end;
+
+    @media (max-width: 576px) {
+      width: 100%;
+      padding-bottom: 10px;
+    }
+  }
+  &__title {
+    width: 390px;
+    max-width: 100%;
+    padding-right: 90px;
+    font-family: AudiTEBold;
+    font-size: 28px;
+    line-height: 31px;
+    letter-spacing: -0.01em;
+
+    @media (max-width: 991px) {
+      font-size: 21px;
+      line-height: 1.3;
+      padding: 0 20px;            
+      width: 300px;
+    }
+    @media (max-width: 576px) {
+      width: 100%;
+      text-align: center;
+      font-size: 14px;
+    }
+  }
+}

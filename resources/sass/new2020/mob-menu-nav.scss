@@ -1,6 +1,9 @@
 .mob-menu-nav {
   display: none;
 
+  z-index: 999;
+  background: #ffffff;
+
   &__list {
     list-style: none;
     padding: 0;
