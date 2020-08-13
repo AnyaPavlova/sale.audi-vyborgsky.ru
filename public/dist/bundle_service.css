@@ -10981,6 +10981,17 @@ label a {
   top: 0;
 }
 
+@media (max-width: 767px) {
+  .special-offers__item--new .special-offers__bg {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    height: auto;
+    width: 100%;
+    left: 0;
+    transform: translate(0);
+  }
+}
 .special-offers-new {
   padding-top: 10px;
   padding-bottom: 10px;

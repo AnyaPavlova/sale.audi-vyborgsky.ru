@@ -3,11 +3,21 @@
   padding-bottom: 56.7%;
   overflow: hidden;
 }
-
 .special-offers__item--new .special-offers__bg {
   position: absolute;
   left: 0;
   top: 0;
+}
+@media (max-width: 767px) {
+  .special-offers__item--new .special-offers__bg {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      height: auto;
+      width: 100%;
+      left: 0;
+      transform: translate(0);
+  }
 }
 
 .special-offers-new {
