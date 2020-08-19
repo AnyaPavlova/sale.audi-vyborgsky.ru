@@ -13466,6 +13466,38 @@ input[type=checkbox]:not(:checked) + label:before {
     padding: 9px 15px;
     background: #000000;
   }
+
+  .header__audi-mob {
+    display: flex;
+    flex-direction: column;
+    align-content: flex-start;
+    align-items: flex-start;
+  }
+
+  .header__logo-mob {
+    max-width: 70px;
+  }
+
+  .header__audi-name-mob {
+    padding-top: 3px;
+    line-height: 1;
+    font-size: 10px;
+    font-family: AudiTEBold;
+  }
+
+  .header-mob__right-part {
+    display: flex;
+    flex-direction: column;
+    align-content: flex-end;
+    align-items: flex-end;
+  }
+
+  .header-mob__phone {
+    font-size: 12px;
+    letter-spacing: -0.025em;
+    display: block;
+    margin-bottom: 12px;
+  }
 }
 .btn {
   outline: none;
@@ -13489,9 +13521,12 @@ input[type=checkbox]:not(:checked) + label:before {
 @media (max-width: 1199.98px) {
   .burger {
     display: block;
-    width: 22px;
+    width: 16px;
     height: 13px;
     background: url(../img/icons/burger.png) no-repeat;
+  }
+  .burger--open {
+    background: url(../img/icons/close.png) no-repeat right top;
   }
 }
 
@@ -13594,8 +13629,19 @@ input[type=checkbox]:not(:checked) + label:before {
   font-family: AudiTEBold;
 }
 
+.model-banner__maintitle {
+  font-size: 35px;
+  line-height: 40px;
+}
+
 .model-banner--no-text .model-banner__title {
   opacity: 0;
+}
+
+.model-banner__subtitle {
+  font-size: 28px;
+  font-family: AudiTENormal;
+  font-weight: 400;
 }
 
 @media (max-width: 1199.98px) {
@@ -13615,8 +13661,31 @@ input[type=checkbox]:not(:checked) + label:before {
     margin: 0;
   }
 
+  .model-banner__maintitle {
+    font-size: 21px;
+    line-height: 23px;
+  }
+
   .model-banner--no-text .model-banner__title {
     position: absolute;
+  }
+
+  .model-banner__subtitle {
+    font-size: 18px;
+    font-family: AudiTENormal;
+    font-weight: 400;
+    text-align: left;
+    margin-bottom: 10px;
+  }
+}
+@media (max-width: 1000px) {
+  .model-banner__item {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .model-banner__bg {
+    order: 1;
   }
 }
 @media (max-width: 576px) {
@@ -13627,6 +13696,7 @@ input[type=checkbox]:not(:checked) + label:before {
   .model-banner__mob {
     display: block;
     position: relative;
+    order: 1;
   }
 
   .model-banner__mob-photo {
@@ -13638,11 +13708,29 @@ input[type=checkbox]:not(:checked) + label:before {
     font-size: 14px;
     line-height: 14px;
     padding: 15px 10px;
+    text-align: center;
+  }
+
+  .model-banner__maintitle {
+    font-size: 14px;
+    line-height: 14px;
+    margin-top: 0;
   }
 
   .model-banner--no-text .model-banner__title {
     position: relative;
     opacity: 1;
+  }
+
+  .model-banner__subtitle {
+    font-size: 12px;
+    text-align: center;
+    margin-bottom: 0;
+  }
+
+  .model-banner__item {
+    display: flex;
+    flex-direction: column;
   }
 }
 .clock {
@@ -14094,6 +14182,53 @@ input[type=checkbox]:not(:checked) + label:before {
   .promo-block__btn {
     width: 178px;
     font-size: 12px;
+  }
+}
+
+.mob-btns {
+  display: none;
+}
+@media (max-width: 1199.98px) {
+  .mob-btns {
+    display: block;
+    background-color: #000000;
+    padding: 30px 0 15px;
+  }
+  .mob-btns__block {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .mob-btns__item {
+    margin-bottom: 15px;
+    width: 50%;
+    padding: 0 15px;
+  }
+  .mob-btns__link {
+    display: flex;
+    width: 100%;
+    height: 50px;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #ffffff;
+    border: 1px solid #ffffff;
+    margin: auto;
+    padding: 0 15px;
+  }
+}
+@media (max-width: 576px) {
+  .mob-btns__block {
+    flex-direction: column;
+  }
+  .mob-btns__item {
+    width: 100%;
+  }
+  .mob-btns__link {
+    font-size: 13px;
+    height: 42px;
+    max-width: 212px;
   }
 }
 

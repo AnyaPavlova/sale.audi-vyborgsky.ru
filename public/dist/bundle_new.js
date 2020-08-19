@@ -20789,6 +20789,7 @@ burger.addEventListener('click', MobBurger);
 function MobBurger(event) {
   $('.header-mob__info').slideToggle('300');
   $('.mob-menu-nav').slideToggle('300');
+  $('.burger')[0].classList.toggle('burger--open');
 }
 
 var submenuBtn = document.querySelectorAll('.mob-menu-nav__link--hassub');

@@ -24,10 +24,19 @@
   top: 60px;
   font-family: AudiTEBold;
 }
+.model-banner__maintitle {
+  font-size: 35px;
+  line-height: 40px;
+}
 .model-banner--no-text .model-banner__title {
   opacity: 0;
 }
-@media (max-width: 1199.98px) {
+.model-banner__subtitle {
+  font-size: 28px;
+  font-family: AudiTENormal;
+  font-weight: 400;
+}
+@media (max-width: 1199.98px) {  
   .model-banner__info  {
     display: none;
   }
@@ -43,8 +52,28 @@
     color: #ffffff;
     margin: 0;
   }
+  .model-banner__maintitle {
+    font-size: 21px;
+    line-height: 23px;
+  }
   .model-banner--no-text .model-banner__title {
     position: absolute;
+  }
+  .model-banner__subtitle {
+    font-size: 18px;
+    font-family: AudiTENormal;
+  font-weight: 400;
+  text-align: left;
+  margin-bottom: 10px;
+  }
+}
+@media (max-width: 1000px) {
+  .model-banner__item {
+    display: flex;
+    flex-direction: column;
+  }
+  .model-banner__bg {
+    order: 1;
   }
 }
 @media (max-width: 576px)  {
@@ -54,6 +83,7 @@
   .model-banner__mob {
     display: block;
     position: relative;
+    order: 1;
   }
   .model-banner__mob-photo {
     width: 100%;
@@ -63,9 +93,25 @@
     font-size: 14px;
     line-height: 14px;
     padding: 15px 10px;
+    text-align: center;
+  }
+  .model-banner__maintitle {
+    font-size: 14px;
+    line-height: 14px;
+    margin-top: 0;
   }
   .model-banner--no-text .model-banner__title {
     position: relative;
     opacity: 1;
+  }
+  .model-banner__subtitle  {
+    font-size: 12px;
+    text-align: center;
+    margin-bottom: 0;
+  }
+
+  .model-banner__item {
+    display: flex;
+    flex-direction: column;
   }
 }

@@ -13,7 +13,7 @@ function ready() {
 
           var blockDaysText = document.querySelector('#clock-name-days');
 
-          $('#clock').countdown('2020/08/20', function(event) {
+          $('#clock').countdown('2020/08/31', function(event) {
             days = event.strftime('%D');
             hours = event.strftime('%H');
             minutes = event.strftime('%M');

@@ -55,15 +55,14 @@
         </div>
         <div class="header-mob">
             <div class="header-mob__main">
-                <a href="https://sale.audi-vyborgsky.ru/" class="header__audi">
-                    <img src="./img/logo_right.png" />
-                    <div class="header__audi-name">
-                        <span class="header__logo">Ауди</span>
-                        <br>
-                        <span class="header__logo">Центр Выборгский</span>
-                    </div>
+                <a href="https://sale.audi-vyborgsky.ru/" class="header__audi-mob">
+                    <img src="./img/logo_right.png" alt="Logo" class="header__logo-mob" />
+                    <div class="header__audi-name-mob">Ауди <br>Центр Выборгский</div>
                 </a>
-                <span id="burger" class="burger"></span>
+                <div class="header-mob__right-part">
+                    <a href="tel:+78125011334" class="header-mob__phone">+7 (812) 501-13-34</a>
+                    <span id="burger" class="burger"></span>
+                </div>
 
             </div>
             <div class="header-mob__info">
@@ -71,7 +70,7 @@
                     <a class="header-mob__btn" target="_blank" href="https://yandex.ru/maps/2/saint-petersburg/?z=10&amp;ll=30.350098%2C59.955797&amp;l=map&amp;origin=jsapi_2_1_56&amp;from=api-maps&amp;um=constructor%3Af5815019cca57f289da79a7df1f581457df563ea9740ddfa6f47acc9c4a17f68&amp;mode=routes&amp;rtext=~60.094032%2C30.254255&amp;rtt=auto">Проложить маршрут</a>
                     <div class="header__item header__phone">
                         <small class="header__small">с 9:00 до 21:00</small>
-                        <a href="tel:+78125011334" class="header__item-phone header__icon">+7 (812) 501-13-34</a>
+                        <!-- <a href="tel:+78125011334" class="header__item-phone header__icon">+7 (812) 501-13-34</a> -->
                     </div>
                 </div>
             </div>
@@ -139,15 +138,18 @@
 
     <section class="model-banner model-banner--no-text">
 
-        <div class="item__carousel">
+        <div class="item__carousel model-banner__item">
             <div class="model-banner__bg">
                 <img src="./img/banner-audi4.jpg" alt="фото 1840x831px">
                 <!-- <img src="./img/banner-audi5.jpg" alt="фото 1840x831px"> -->
             </div>
             <div class="model-banner__mob">
-              <img src="./img/mob-banner-audi_600x400.jpg" alt="фото для мобильных 600x400" class="model-banner__mob-photo">              
+              <img src="./img/mob-banner-audi_600x350.jpg" alt="фото для мобильных 600x350" class="model-banner__mob-photo">              
             </div>
-            <h1 class="model-banner__title">Последние Audi Q5 2019 года <br>Условия, которые вас впечатлят</h1>
+            <div class="model-banner__title">
+                <h1 class="model-banner__maintitle">Последние Audi Q5 2019 года <br>Условия, которые вас впечатлят</h1>
+                <h2 class="model-banner__subtitle">Текст подгазоловка</h2>
+            </div>            
             <div class="model-banner__info">
                 <div class="inner-all">
 
@@ -184,6 +186,17 @@
             </div>
         </div>
     </section>
+
+    <div class="mob-btns">
+        <div class="inner">
+            <div class="mob-btns__block">
+                <div class="mob-btns__item"><span class="mob-btns__link" data-fancybox="" data-src="#callback">Узнать финальную цену</span></div>
+                <div class="mob-btns__item"><span class="mob-btns__link" data-fancybox="" data-src="#callback">Бонус до 340 000 рублей по трейд-ин</span></div>
+                <div class="mob-btns__item"><span class="mob-btns__link" data-fancybox="" data-src="#callback">Кредит от 0.7%</span></div>
+                <div class="mob-btns__item"><span class="mob-btns__link" data-fancybox="" data-src="#callback">Бесконтактная доставка</span></div>
+            </div>
+        </div>
+    </div>
 
     <section class="timer">
       <div class="inner">
