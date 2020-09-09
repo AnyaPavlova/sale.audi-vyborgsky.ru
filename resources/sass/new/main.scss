@@ -3342,7 +3342,7 @@ input[type=checkbox]:not(:checked) + label:before {
 }
 
 .credit .inner {
-    max-width: 100%
+    max-width: 1920px;
 }
 
 @media (max-width: 767px) {
@@ -3749,7 +3749,9 @@ input[type=checkbox]:not(:checked) + label:before {
 }
 
 .model-menu__inner {
-    padding: 0 50px
+    padding: 0 50px;
+    max-width: 1920px;
+    margin: auto;
 }
 
 @media (max-width: 1199px) {
@@ -4069,7 +4071,8 @@ input[type=checkbox]:not(:checked) + label:before {
 }
 
 .car-shop .inner {
-    max-width: 1500px
+    // max-width: 1500px
+    max-width: 1450px;
 }
 
 @media (max-width: 991px) {
@@ -4137,10 +4140,10 @@ input[type=checkbox]:not(:checked) + label:before {
 }
 
 .car-item__inner {
-    border-top: 1px solid $audi_gray;
-    border-bottom: 1px solid $audi_gray;
-    padding-top: 35px;
-    padding-bottom: 25px;
+    border-top: 1px solid #DBD8D8;
+    border-bottom: 1px solid #DBD8D8;
+    padding-top: 30px;
+    padding-bottom: 30px;
     position: relative
 }
 

@@ -3,6 +3,8 @@
 }
 .header__content {
   justify-content: space-between;
+  max-width: 1920px;
+  margin: auto;
 }
 .header__audi {
   display: flex;

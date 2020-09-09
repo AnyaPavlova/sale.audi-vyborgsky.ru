@@ -1,0 +1,193 @@
+.new-car-item {
+  padding-left: 0;
+  padding-right: 0;
+  margin-top: -1px;
+  position: relative;
+
+  @media (max-width: 991px) {
+    margin-bottom: 0;
+  }
+
+  @media (max-width: 991px) {
+    background-color: #fff;
+  }
+
+  &:hover {
+    background-color: #fff;
+  }
+
+  &__inner {
+    border-top: 1px solid #DBD8D8;
+    border-bottom: 1px solid #DBD8D8;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    position: relative;
+    overflow: hidden;
+
+    @media (max-width: 670px) {
+      padding-top: 15px;
+    }
+  }
+
+  &__row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -25px;
+    margin-right: -25px;
+  }
+  &__col {
+    padding-left: 25px;
+    padding-right: 25px;
+    width: 50%;
+    position: relative;
+
+    @media (max-width: 670px) {
+      width: 100%;
+    }
+  }
+  &__photo-block {
+    width: 100%;
+
+    @media (max-width: 670px) {
+      padding-bottom: 15px;
+    }
+  }
+  &__photo {
+    width: 100%;
+  }
+
+  &__model-bg {
+    position: absolute;
+    font-weight: 700;
+    font-size: 140px;
+    color: #F4F3F3;
+    left: 117px;
+    bottom: -14px;
+    text-transform: uppercase;
+    opacity: 0;
+    transition: all 0.5s;
+  }
+  &:hover &__model-bg {
+    opacity: 1;
+  }
+
+  &__info-block {
+    padding: 0 9px 0 0;
+    position: relative;
+    z-index: 2;
+  }
+  &__header {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-bottom: 25px;
+    border-bottom: 1px solid #DBD8D8;
+
+    @media (max-width: 670px) {
+      padding-bottom: 15px;
+    }
+  }
+  &__price {
+    // font-weight: 700;
+    font-size: 24px;
+    font-family: Audi Type Screen, AudiTEBold;
+    font-weight: 700;
+
+    @media (max-width: 670px) {
+      width: 100%;
+      order: 1;
+    }
+  }
+  &__name-block {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-content: flex-end;
+    align-items: flex-end;
+    font-family: AudiTEBold;
+
+    @media (max-width: 670px) {
+      width: 100%;
+      flex-direction: row;
+      justify-content: flex-start;
+      align-content: center;
+      align-items: center;
+      padding-bottom: 7px;
+    }
+  }
+  &__name {
+    font-size: 28px;
+    font-weight: 700;
+    padding-bottom: 3px;
+
+    @media (max-width: 670px) {
+      padding-bottom: 0;
+      padding-right: 20px;
+    }
+  }
+  &__equipment {
+    font-size: 18px;
+    color: #8B8383;
+    font-weight: 700;
+  }
+
+  &__parameters-block {
+    padding-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  &__parameters-col {
+    max-width: 50%;
+
+    @media (max-width: 670px) {
+      width: 100%;
+      max-width: 100%;
+    }
+  }
+  &__parameters-col--right {
+    text-align: right;
+
+    @media (max-width: 670px) {
+      text-align: left;
+    }
+  }
+  &__parameters-item {
+    color: #8B8383;
+    font-size: 15px;
+    line-height: 1.2;
+    padding-bottom: 12px;
+  }
+  &__parameters-name {
+    color: #000;
+    display: inline-block;
+    padding-right: 8px;
+    font-weight: 700;
+  }
+
+  &__btns-block {
+    text-align: right;
+
+    @media (max-width: 670px) {
+      text-align: center;
+      padding-top: 5px;
+    }
+  }
+
+  &__btn {
+    // font-family: AudiTEBold;    
+    font-weight: 700;
+    font-size: 18px;
+  }
+
+
+}
+
+.new-car-shop {
+  @media (max-width: 1199.98px) {
+    padding: 0 20px;
+  }
+  @media (max-width: 670px) {
+    padding: 0 10px;
+  }
+}

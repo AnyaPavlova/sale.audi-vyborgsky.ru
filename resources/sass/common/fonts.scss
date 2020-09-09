@@ -12,3 +12,10 @@
     font-family: AudiTNormal;
     src: url("../fonts/AudiTNormal/AudiType-Normal.eot?") format("eot"), url("../fonts/AudiTNormal/AudiType-Normal.woff2") format("woff2"), url("../fonts/AudiTNormal/AudiType-Normal.woff") format("woff"), url("../fonts/AudiTNormal/AudiType-Normal.ttf") format("truetype"), url("../fonts/AudiTNormal/AudiType-Normal.svg#AudiTNormal") format("svg")
 }
+
+@font-face {
+  font-family: Audi Type Screen;
+  src: url("../fonts/AudiTypeScreen/AudiTypeVF.woff2") format("woff2-variations");
+  font-style: normal;
+  font-weight: 400;
+}

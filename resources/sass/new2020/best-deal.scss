@@ -1,0 +1,242 @@
+.best-deal {
+  padding-top: 15px;
+  padding-bottom: 25px;
+
+  @media (max-width: 670px) {
+    padding-bottom: 0;
+  }
+
+  &__inner {
+    max-width: 1340px;
+    margin: auto;
+  }
+  &__title {
+    padding: 23px 0 23px;    
+    font-size: 30px;
+    line-height: 1.1;
+    font-family: AudiTEBold;
+
+    @media (max-width: 1199.98px) {
+      text-align: center;
+      padding: 15px 0 7px;
+    }
+    @media (max-width: 991px) {
+      text-align: left;
+      padding: 7px 20px;
+      font-size: 21px;
+    }
+  }
+
+  &__block {
+    background-color: #EEEEEE;
+  }
+  &__row {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  &__col {
+    width: 50%;
+
+    @media (max-width: 991px) {
+      width: 100%;
+    }
+  }
+
+  &__col-photo {
+    position: relative;
+  }
+  &__btn-block {
+    position: absolute;
+    right: 14px;
+    bottom: 16px;
+  }
+  &__btn {
+    // font-family: AudiTEBold;
+    font-weight: 700;
+    font-size: 18px;
+    color: #000000;
+    background-color: #ffffff;
+    min-width: 260px;
+    border: 0;
+
+    &:hover {
+      background: #000000;
+      color: #ffffff;
+    }
+  }
+  &__photo-block {
+    height: 100%;
+    width: 100%;
+    position: relative;
+
+    @media (max-width: 991px) {
+      height: 0;
+      padding-bottom: 65%;
+    }
+  }
+  &__img {
+    width: 100%;
+    display: block;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    top: 0;
+    right: 0;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  &__col-info {
+    padding: 33px 25px 7px 27px;
+    position: relative;
+
+    @media (max-width: 670px) {
+      padding: 25px 20px 15px;
+    }
+  }
+  &__info {
+    position: relative;
+    z-index: 2;
+  }
+  &__header {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: center;
+    align-items: center;
+    padding: 0 0 30px;
+    margin: 0;
+
+    @media (max-width: 670px) {
+      flex-direction: column;
+      align-content: center;
+      align-items: center;
+    }
+  }
+  &__name {
+    font-family: AudiTEBold;
+    font-size: 36px;
+    line-height: 1;
+
+    @media (max-width: 991px) {
+      font-size: 25px;
+    }
+    @media (max-width: 670px) {
+      text-align: center;
+    }
+  }
+  &__timer {
+    text-align: right;
+
+    @media (max-width: 670px) {
+      width: 100%;
+      padding-top: 15px;
+      text-align: center;
+    }
+  }
+  &__timer-name {
+    letter-spacing: 0.05em;
+    color: #8B8383;
+    font-size: 14px;
+    padding: 0 0 3px;
+    margin: 0;
+  }
+
+  &__modification-title {
+    margin: 0;
+    padding: 0 0 10px;
+    font-size: 14px;
+    letter-spacing: 0.05em;
+    color: #8B8383;
+  }
+  &__modification-info {
+    font-size: 20px;
+    line-height: 24px;
+    color: #000000;
+    font-family: AudiTEBold;
+    margin: 0;
+    padding: 0;
+    max-width: 408px;
+
+    @media (max-width: 670px) {
+      font-size: 18px;
+    }
+  }
+  &__modification-block {
+    padding-bottom: 41px;
+    position: relative;
+
+    @media (max-width: 670px) {
+      padding-bottom: 20px;
+    }
+
+    &:after {
+      content: '';
+      display: block;
+      width: 124px;
+      height: 1px;
+      background: #fff;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+    }
+  }
+  &__specifications-block {
+    padding-top: 41px;
+    max-width: 500px;
+
+    @media (max-width: 670px) {
+      padding-top: 20px;
+    }
+  }
+  &__specifications-row {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  &__specifications-col {
+    width: 33.3333%;
+
+    @media (max-width: 670px) {
+      width: 50%;
+    }
+  }
+  &__specifications-item {
+    padding-bottom: 35px;
+
+    @media (max-width: 670px) {
+      padding-bottom: 18px;
+    }
+  }
+  &__specifications-name {
+    margin: 0;
+    padding: 0 0 7px;
+    font-size: 14px;
+    letter-spacing: 0.05em;
+    color: #8B8383;
+  }
+  &__specifications-value {
+    font-size: 15px;
+    color: #000;
+    letter-spacing: 0.05em;
+    font-weight: 700;
+    padding: 0;
+    margin: 0;    
+  }
+  &__num-bg {
+    position: absolute;
+    font-size: 260px;
+        font-family: AudiTNormal;
+        font-weight: 700;
+    color: #FFFFFF;
+    right: 45px;
+    top: 50%;
+    transform: translateY(-50%);
+    margin: auto;
+
+    @media (max-width: 670px) {
+      right: auto;
+      opacity: 0.8;
+    }
+  }
+
+}
