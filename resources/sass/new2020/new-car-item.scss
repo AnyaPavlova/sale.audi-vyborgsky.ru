@@ -75,6 +75,10 @@
     padding: 0 9px 0 0;
     position: relative;
     z-index: 2;
+
+    @media (max-width: 670px) {
+      padding-right: 0;
+    }
   }
   &__header {
     display: flex;

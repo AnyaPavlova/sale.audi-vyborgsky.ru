@@ -8538,6 +8538,12 @@ html {
   font-family: AudiTNormal;
   src: url("../fonts/AudiTNormal/AudiType-Normal.eot?") format("eot"), url("../fonts/AudiTNormal/AudiType-Normal.woff2") format("woff2"), url("../fonts/AudiTNormal/AudiType-Normal.woff") format("woff"), url("../fonts/AudiTNormal/AudiType-Normal.ttf") format("truetype"), url("../fonts/AudiTNormal/AudiType-Normal.svg#AudiTNormal") format("svg");
 }
+@font-face {
+  font-family: Audi Type Screen;
+  src: url("../fonts/AudiTypeScreen/AudiTypeVF.woff2") format("woff2-variations");
+  font-style: normal;
+  font-weight: 400;
+}
 /**
  * Общий стиль для всех кнопок по требованию импортёра
  */
@@ -11799,7 +11805,7 @@ input[type=checkbox]:not(:checked) + label:before {
 }
 
 .credit .inner {
-  max-width: 100%;
+  max-width: 1920px;
 }
 
 @media (max-width: 767px) {
@@ -12187,6 +12193,8 @@ input[type=checkbox]:not(:checked) + label:before {
 
 .model-menu__inner {
   padding: 0 50px;
+  max-width: 1920px;
+  margin: auto;
 }
 
 @media (max-width: 1199px) {
@@ -12478,7 +12486,7 @@ input[type=checkbox]:not(:checked) + label:before {
   }
 }
 .car-shop .inner {
-  max-width: 1500px;
+  max-width: 1450px;
 }
 
 @media (max-width: 991px) {
@@ -12542,10 +12550,10 @@ input[type=checkbox]:not(:checked) + label:before {
 }
 
 .car-item__inner {
-  border-top: 1px solid #b3b3b3;
-  border-bottom: 1px solid #b3b3b3;
-  padding-top: 35px;
-  padding-bottom: 25px;
+  border-top: 1px solid #DBD8D8;
+  border-bottom: 1px solid #DBD8D8;
+  padding-top: 30px;
+  padding-bottom: 30px;
   position: relative;
 }
 
@@ -13201,6 +13209,13 @@ input[type=checkbox]:not(:checked) + label:before {
   white-space: nowrap;
 }
 
+.showcase-audi__container {
+  padding-left: 0;
+  padding-right: 0;
+  max-width: 1340px;
+  margin: auto;
+}
+
 @media (-ms-high-contrast: none), screen and (-ms-high-contrast: active) {
   .showcase-audi__item {
     min-height: 600px;
@@ -13288,6 +13303,8 @@ input[type=checkbox]:not(:checked) + label:before {
 
 .header__content {
   justify-content: space-between;
+  max-width: 1920px;
+  margin: auto;
 }
 
 .header__audi {
@@ -13612,6 +13629,7 @@ input[type=checkbox]:not(:checked) + label:before {
   right: 0;
   margin: auto;
   width: calc(100% - 100px);
+  max-width: 1920px;
 }
 
 .model-banner__mob {
@@ -13627,6 +13645,11 @@ input[type=checkbox]:not(:checked) + label:before {
   color: #ffffff;
   top: 60px;
   font-family: AudiTEBold;
+  max-width: 1920px;
+  width: calc(100% - 100px);
+  left: 0;
+  right: 0;
+  margin: auto;
 }
 
 .model-banner__maintitle {
@@ -13659,6 +13682,7 @@ input[type=checkbox]:not(:checked) + label:before {
     line-height: 23px;
     color: #ffffff;
     margin: 0;
+    width: 100%;
   }
 
   .model-banner__maintitle {
@@ -14229,6 +14253,521 @@ input[type=checkbox]:not(:checked) + label:before {
     font-size: 13px;
     height: 42px;
     max-width: 212px;
+  }
+}
+
+.best-deal {
+  padding-top: 15px;
+  padding-bottom: 25px;
+}
+@media (max-width: 670px) {
+  .best-deal {
+    padding-bottom: 0;
+  }
+}
+.best-deal__inner {
+  max-width: 1440px;
+  padding: 0 50px;
+  margin: auto;
+}
+@media (max-width: 1199.98px) {
+  .best-deal__inner {
+    padding: 0;
+  }
+}
+.best-deal__title {
+  padding: 23px 0 23px;
+  font-size: 30px;
+  line-height: 1.1;
+  font-family: AudiTEBold;
+}
+@media (max-width: 1199.98px) {
+  .best-deal__title {
+    text-align: center;
+    padding: 15px 0 7px;
+  }
+}
+@media (max-width: 991px) {
+  .best-deal__title {
+    text-align: left;
+    padding: 7px 20px;
+    font-size: 21px;
+  }
+}
+.best-deal__block {
+  background-color: #EEEEEE;
+}
+.best-deal__row {
+  display: flex;
+  flex-wrap: wrap;
+}
+.best-deal__col {
+  width: 50%;
+}
+@media (max-width: 991px) {
+  .best-deal__col {
+    width: 100%;
+  }
+}
+.best-deal__col-photo {
+  position: relative;
+}
+.best-deal__btn-block {
+  position: absolute;
+  right: 14px;
+  bottom: 16px;
+}
+.best-deal__btn {
+  font-weight: 700;
+  font-size: 18px;
+  color: #000000;
+  background-color: #ffffff;
+  min-width: 260px;
+  border: 0;
+}
+.best-deal__btn:hover {
+  background: #000000;
+  color: #ffffff;
+}
+.best-deal__photo-block {
+  height: 100%;
+  width: 100%;
+  position: relative;
+}
+@media (max-width: 991px) {
+  .best-deal__photo-block {
+    height: 0;
+    padding-bottom: 65%;
+  }
+}
+.best-deal__img {
+  width: 100%;
+  display: block;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  top: 0;
+  right: 0;
+  height: 100%;
+  object-fit: cover;
+}
+.best-deal__col-info {
+  padding: 33px 25px 7px 27px;
+  position: relative;
+}
+@media (max-width: 670px) {
+  .best-deal__col-info {
+    padding: 25px 20px 15px;
+  }
+}
+.best-deal__info {
+  position: relative;
+  z-index: 2;
+}
+.best-deal__header {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-content: center;
+  align-items: center;
+  padding: 0 0 30px;
+  margin: 0;
+}
+@media (max-width: 670px) {
+  .best-deal__header {
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+  }
+}
+.best-deal__name {
+  font-family: AudiTEBold;
+  font-size: 36px;
+  line-height: 1;
+}
+@media (max-width: 991px) {
+  .best-deal__name {
+    font-size: 25px;
+  }
+}
+@media (max-width: 670px) {
+  .best-deal__name {
+    text-align: center;
+  }
+}
+.best-deal__timer {
+  text-align: right;
+}
+@media (max-width: 670px) {
+  .best-deal__timer {
+    width: 100%;
+    padding-top: 15px;
+    text-align: center;
+  }
+}
+.best-deal__timer-name {
+  letter-spacing: 0.05em;
+  color: #8B8383;
+  font-size: 14px;
+  padding: 0 0 3px;
+  margin: 0;
+}
+.best-deal__modification-title {
+  margin: 0;
+  padding: 0 0 10px;
+  font-size: 14px;
+  letter-spacing: 0.05em;
+  color: #8B8383;
+}
+.best-deal__modification-info {
+  font-size: 20px;
+  line-height: 24px;
+  color: #000000;
+  font-family: AudiTEBold;
+  margin: 0;
+  padding: 0;
+  max-width: 408px;
+}
+@media (max-width: 670px) {
+  .best-deal__modification-info {
+    font-size: 18px;
+  }
+}
+.best-deal__modification-block {
+  padding-bottom: 41px;
+  position: relative;
+}
+@media (max-width: 670px) {
+  .best-deal__modification-block {
+    padding-bottom: 20px;
+  }
+}
+.best-deal__modification-block:after {
+  content: "";
+  display: block;
+  width: 124px;
+  height: 1px;
+  background: #fff;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+.best-deal__specifications-block {
+  padding-top: 41px;
+  max-width: 500px;
+}
+@media (max-width: 670px) {
+  .best-deal__specifications-block {
+    padding-top: 20px;
+  }
+}
+.best-deal__specifications-row {
+  display: flex;
+  flex-wrap: wrap;
+}
+.best-deal__specifications-col {
+  width: 33.3333%;
+}
+@media (max-width: 670px) {
+  .best-deal__specifications-col {
+    width: 50%;
+  }
+}
+.best-deal__specifications-item {
+  padding-bottom: 35px;
+}
+@media (max-width: 670px) {
+  .best-deal__specifications-item {
+    padding-bottom: 18px;
+  }
+}
+.best-deal__specifications-name {
+  margin: 0;
+  padding: 0 0 7px;
+  font-size: 14px;
+  letter-spacing: 0.05em;
+  color: #8B8383;
+}
+.best-deal__specifications-value {
+  font-size: 15px;
+  color: #000;
+  letter-spacing: 0.05em;
+  font-weight: 700;
+  padding: 0;
+  margin: 0;
+}
+.best-deal__num-bg {
+  position: absolute;
+  font-size: 260px;
+  font-family: AudiTNormal;
+  font-weight: 700;
+  color: #FFFFFF;
+  right: 45px;
+  top: 50%;
+  transform: translateY(-50%);
+  margin: auto;
+}
+@media (max-width: 670px) {
+  .best-deal__num-bg {
+    right: auto;
+    opacity: 0.8;
+    font-size: 200px;
+  }
+}
+
+.new-clock {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -6px;
+  margin-right: -6px;
+  justify-content: flex-end;
+}
+@media (max-width: 670px) {
+  .new-clock {
+    justify-content: center;
+  }
+}
+.new-clock__item {
+  display: flex;
+  flex-direction: column;
+  padding-left: 6px;
+  padding-right: 6px;
+  align-content: center;
+  align-items: center;
+}
+.new-clock__num {
+  font-size: 22px;
+  font-family: AudiTEBold;
+  color: #000;
+  letter-spacing: -0.1em;
+}
+.new-clock__num--seconds {
+  color: #8B8383;
+}
+.new-clock__name {
+  font-size: 8px;
+  letter-spacing: 0.05em;
+  color: #8B8383;
+  margin: 0;
+  padding: 0;
+}
+
+.preference .main__container {
+  max-width: 1440px;
+  margin: auto;
+}
+
+.footer__disclaimer .main__container {
+  max-width: 1920px;
+  margin: auto;
+}
+
+.footer__disclaimer-text {
+  max-width: 100%;
+}
+
+.ruble-icon {
+  font-family: Audi Type Screen, AudiTEBold;
+}
+
+.new-car-item {
+  padding-left: 0;
+  padding-right: 0;
+  margin-top: -1px;
+  position: relative;
+}
+@media (max-width: 991px) {
+  .new-car-item {
+    margin-bottom: 0;
+  }
+}
+@media (max-width: 991px) {
+  .new-car-item {
+    background-color: #fff;
+  }
+}
+.new-car-item:hover {
+  background-color: #fff;
+}
+.new-car-item__inner {
+  border-top: 1px solid #DBD8D8;
+  border-bottom: 1px solid #DBD8D8;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  position: relative;
+  overflow: hidden;
+}
+@media (max-width: 670px) {
+  .new-car-item__inner {
+    padding-top: 15px;
+  }
+}
+.new-car-item__row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -25px;
+  margin-right: -25px;
+}
+.new-car-item__col {
+  padding-left: 25px;
+  padding-right: 25px;
+  width: 50%;
+  position: relative;
+}
+@media (max-width: 670px) {
+  .new-car-item__col {
+    width: 100%;
+  }
+}
+.new-car-item__photo-block {
+  width: 100%;
+}
+@media (max-width: 670px) {
+  .new-car-item__photo-block {
+    padding-bottom: 15px;
+  }
+}
+.new-car-item__photo {
+  width: 100%;
+}
+.new-car-item__model-bg {
+  position: absolute;
+  font-weight: 700;
+  font-size: 140px;
+  color: #F4F3F3;
+  left: 117px;
+  bottom: -14px;
+  text-transform: uppercase;
+  opacity: 0;
+  transition: all 0.5s;
+}
+.new-car-item:hover .new-car-item__model-bg {
+  opacity: 1;
+}
+.new-car-item__info-block {
+  padding: 0 9px 0 0;
+  position: relative;
+  z-index: 2;
+}
+@media (max-width: 670px) {
+  .new-car-item__info-block {
+    padding-right: 0;
+  }
+}
+.new-car-item__header {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding-bottom: 25px;
+  border-bottom: 1px solid #DBD8D8;
+}
+@media (max-width: 670px) {
+  .new-car-item__header {
+    padding-bottom: 15px;
+  }
+}
+.new-car-item__price {
+  font-size: 24px;
+  font-family: Audi Type Screen, AudiTEBold;
+  font-weight: 700;
+}
+@media (max-width: 670px) {
+  .new-car-item__price {
+    width: 100%;
+    order: 1;
+  }
+}
+.new-car-item__name-block {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-content: flex-end;
+  align-items: flex-end;
+  font-family: AudiTEBold;
+}
+@media (max-width: 670px) {
+  .new-car-item__name-block {
+    width: 100%;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-content: center;
+    align-items: center;
+    padding-bottom: 7px;
+  }
+}
+.new-car-item__name {
+  font-size: 28px;
+  font-weight: 700;
+  padding-bottom: 3px;
+}
+@media (max-width: 670px) {
+  .new-car-item__name {
+    padding-bottom: 0;
+    padding-right: 20px;
+  }
+}
+.new-car-item__equipment {
+  font-size: 18px;
+  color: #8B8383;
+  font-weight: 700;
+}
+.new-car-item__parameters-block {
+  padding-top: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.new-car-item__parameters-col {
+  max-width: 50%;
+}
+@media (max-width: 670px) {
+  .new-car-item__parameters-col {
+    width: 100%;
+    max-width: 100%;
+  }
+}
+.new-car-item__parameters-col--right {
+  text-align: right;
+}
+@media (max-width: 670px) {
+  .new-car-item__parameters-col--right {
+    text-align: left;
+  }
+}
+.new-car-item__parameters-item {
+  color: #8B8383;
+  font-size: 15px;
+  line-height: 1.2;
+  padding-bottom: 12px;
+}
+.new-car-item__parameters-name {
+  color: #000;
+  display: inline-block;
+  padding-right: 8px;
+  font-weight: 700;
+}
+.new-car-item__btns-block {
+  text-align: right;
+}
+@media (max-width: 670px) {
+  .new-car-item__btns-block {
+    text-align: center;
+    padding-top: 5px;
+  }
+}
+.new-car-item__btn {
+  font-weight: 700;
+  font-size: 18px;
+}
+
+@media (max-width: 1199.98px) {
+  .new-car-shop {
+    padding: 0 20px;
+  }
+}
+@media (max-width: 670px) {
+  .new-car-shop {
+    padding: 0 10px;
   }
 }
 
