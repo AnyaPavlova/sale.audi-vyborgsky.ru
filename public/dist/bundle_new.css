@@ -14311,6 +14311,12 @@ input[type=checkbox]:not(:checked) + label:before {
 }
 .best-deal__col-photo {
   position: relative;
+  border-left: 1px solid #ffffff;
+}
+@media (max-width: 991px) {
+  .best-deal__col-photo {
+    border-left: 0;
+  }
 }
 .best-deal__btn-block {
   position: absolute;
@@ -14354,6 +14360,12 @@ input[type=checkbox]:not(:checked) + label:before {
 .best-deal__col-info {
   padding: 33px 25px 7px 27px;
   position: relative;
+  border-right: 1px solid #ffffff;
+}
+@media (max-width: 991px) {
+  .best-deal__col-info {
+    border-right: 0;
+  }
 }
 @media (max-width: 670px) {
   .best-deal__col-info {

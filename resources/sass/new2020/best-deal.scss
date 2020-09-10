@@ -49,6 +49,12 @@
 
   &__col-photo {
     position: relative;
+
+    border-left: 1px solid #ffffff;
+
+    @media (max-width: 991px) {
+      border-left: 0;
+    }
   }
   &__btn-block {
     position: absolute;
@@ -94,6 +100,11 @@
   &__col-info {
     padding: 33px 25px 7px 27px;
     position: relative;
+    border-right: 1px solid #ffffff;
+
+    @media (max-width: 991px) {
+      border-right: 0;
+    }
 
     @media (max-width: 670px) {
       padding: 25px 20px 15px;
