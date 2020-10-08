@@ -4,6 +4,9 @@
   z-index: 999;
   background: #ffffff;
 
+  overflow: scroll;
+    max-height: calc( 100vh - 115px);
+
   &__list {
     list-style: none;
     padding: 0;
@@ -55,6 +58,9 @@
   padding: 0;
   margin: 0;
   display: none;
+
+  // overflow: scroll;
+  // height: calc( 100vh - 105px - 116px);
 }
 .mob-submenu__link {
    padding: 10px;

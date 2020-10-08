@@ -11070,7 +11070,7 @@ input[type=checkbox]:not(:checked) + label:before {
 
 .showcase-audi__models {
   justify-content: space-between;
-  padding: 8px 120px 8px 28px;
+  padding: 8px 0;
 }
 
 @media (max-width: 1199.98px) {
@@ -12217,16 +12217,10 @@ input[type=checkbox]:not(:checked) + label:before {
   }
 }
 .model-menu__item {
-  margin-right: 65px;
   font-family: AudiTENormal;
   letter-spacing: 0.1em;
 }
 
-@media (max-width: 991px) {
-  .model-menu__item {
-    margin-right: 40px;
-  }
-}
 .model-menu__item a {
   color: #b2b2b2;
   font-size: 16px;
@@ -12952,7 +12946,7 @@ input[type=checkbox]:not(:checked) + label:before {
 }
 
 .model-menu__item {
-  margin: 0 auto;
+  margin: 0;
 }
 
 .icon__question.icon__banner {
@@ -13002,10 +12996,6 @@ input[type=checkbox]:not(:checked) + label:before {
 @media all and (max-width: 1400px) {
   .model-menu__model-row {
     word-break: break-word;
-  }
-
-  .model-menu__item {
-    margin-right: 30px;
   }
 
   .promo-banner__title {
@@ -13551,6 +13541,8 @@ input[type=checkbox]:not(:checked) + label:before {
   display: none;
   z-index: 999;
   background: #ffffff;
+  overflow: scroll;
+  max-height: calc( 100vh - 115px);
 }
 .mob-menu-nav__list {
   list-style: none;

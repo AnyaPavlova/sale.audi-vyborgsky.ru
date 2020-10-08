@@ -2547,7 +2547,8 @@ input[type=checkbox]:not(:checked) + label:before {
 
 .showcase-audi__models {
     justify-content: space-between;
-    padding: 8px 120px 8px 28px
+    // padding: 8px 28px 8px 28px
+    padding: 8px 0;
 }
 
 @media (max-width: 1199.98px) {
@@ -3777,15 +3778,15 @@ input[type=checkbox]:not(:checked) + label:before {
 }
 
 .model-menu__item {
-    margin-right: 65px;
+    // margin-right: 65px;
     font-family: AudiTENormal;
     letter-spacing: .1em
 }
 
 @media (max-width: 991px) {
-    .model-menu__item {
-        margin-right: 40px
-    }
+    // .model-menu__item {
+    //     margin-right: 40px
+    // }
 }
 
 .model-menu__item a {
