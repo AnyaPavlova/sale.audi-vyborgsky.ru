@@ -8738,6 +8738,18 @@ a:hover {
     font-size: 14px;
   }
 
+  .header-mob__phone:before {
+    content: "";
+    width: 25px;
+    height: 25px;
+    right: 172px;
+    top: 12px;
+    margin: auto;
+    background: url(../img/phone-red.png) no-repeat;
+    background-size: contain;
+    position: absolute;
+  }
+
   .header-mob__info {
     text-align: right;
     font-family: AudiTNormal;
@@ -13337,13 +13349,13 @@ input[type=checkbox]:not(:checked) + label:before {
 
 .header__item-phone:before {
   content: "";
-  width: 10px;
-  height: 13px;
-  left: -15px;
-  top: 0;
+  width: 30px;
+  height: 30px;
+  left: -35px;
+  top: -10px;
   bottom: 0;
   margin: auto;
-  background: url("../img/phone.png") no-repeat;
+  background: url(../img/phone-red.png) no-repeat;
   background-size: contain;
 }
 

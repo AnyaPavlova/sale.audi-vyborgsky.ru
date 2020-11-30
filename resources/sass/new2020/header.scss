@@ -41,14 +41,23 @@
   margin: auto;
 }
 .header__item-phone:before {
-  content: '';
-  width: 10px;
-  height: 13px;
-  left: -15px;
-  top: 0; bottom: 0;
-  margin: auto;
-  background: url("../img/phone.png") no-repeat;
-  background-size: contain;
+  // content: '';
+  // width: 10px;
+  // height: 13px;
+  // left: -15px;
+  // top: 0; bottom: 0;
+  // margin: auto;
+  // background: url("../img/phone.png") no-repeat;
+  // background-size: contain;
+      content: "";
+    width: 30px;
+    height: 30px;
+    left: -35px;
+    top: -10px;
+    bottom: 0;
+    margin: auto;
+    background: url(../img/phone-red.png) no-repeat;
+    background-size: contain;
 }
 .header__item-map:before {
   content: '';
