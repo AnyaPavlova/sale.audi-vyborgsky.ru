@@ -3630,7 +3630,8 @@ input[type=checkbox]:not(:checked) + label:before {
 }
 
 .map__img img {
-    width: 100%
+    width: 100%;
+    display: block;
 }
 
 .map__text {
