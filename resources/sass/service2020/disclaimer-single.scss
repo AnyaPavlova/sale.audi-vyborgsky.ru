@@ -1,0 +1,33 @@
+.disclaimer-single {
+  padding: 0;
+ 
+  &__block {
+    padding: 40px 96px 20px;    
+
+    @media (max-width: 991px) {
+      padding: 40px 0 20px;
+    }
+    @media (max-width: 670px) {
+      padding: 10px 0 0;
+      border-top: 1px solid $audi_gray;
+    }
+  }
+
+  &__text {
+    font-family: AudiTNormal;
+    font-size: 15px;
+    color: $audi_gray;
+    line-height: 1.2;
+    padding: 0 0 20px;
+    margin: 0;
+
+    @media (max-width: 670px) {
+      font-size: 11px;
+      padding-bottom: 10px;
+    }
+  }
+}
+
+.single__footer .disclaimer-single__block {
+  border-top: 1px solid $audi_gray;
+}

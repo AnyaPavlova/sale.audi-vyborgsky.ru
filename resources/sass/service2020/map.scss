@@ -1,0 +1,170 @@
+.map {
+    width: 100%;
+    height: 650px;
+    position: relative
+}
+
+@media (max-width: 767px) {
+    .map {
+        display: none
+    }
+}
+
+.map__yandex {
+    width: 100%;
+    height: 650px;
+    position: relative;
+    z-index: 2
+}
+
+.map__info {
+    width: 410px;
+    max-width: 100%;
+    background: #fff;
+    // margin-top: 45px;
+    position: relative;
+    z-index: 5;
+    position: absolute;
+    top: 46px;
+    left: calc( 46px + 42px );
+}
+
+.map__img img {
+    width: 100%;
+    display: block;
+}
+
+.map__text {
+    padding: 20px 25px 10px
+}
+
+.map__title {
+    font-family: AudiTEBold;
+    font-size: 15px;
+    line-height: 1.25;
+    letter-spacing: -.01em;
+    margin: 0 0 7px
+}
+
+.map__title--red {
+    color: $audi_red;
+    display: block
+}
+
+.map__subtitle {
+    font-family: AudiTENormal;
+    font-size: 15px;
+    letter-spacing: -.01em;
+    margin-bottom: 18px;
+    margin-top: 0;
+    font-weight: 400;
+}
+
+.map__contact {
+    padding-left: 15px;
+    padding-bottom: 20px;
+    margin: 0
+}
+
+.map__contact--phone {
+    font-family: AudiTEBold;
+    font-size: 15px;
+    letter-spacing: -.01em;
+    background: url(../img/phone_big.png) no-repeat 2px 2px;
+    background-size: 8px 13px;
+}
+
+.map__contact--venue {
+    font-size: 13px;
+    letter-spacing: -.01em;
+    font-family: AudiTNormal;
+    background: url(../img/poi-small.png) no-repeat -2px 3px;
+    background-size: 13px 13px;
+
+    @media (max-width: 670px) {
+        font-size: 11px;
+    }
+}
+
+.map__form {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+@media (max-width: 991px) {
+    .map__form .promo-form {
+        max-width: 100%
+    }
+}
+
+.map__input {
+    width: 100%;
+    margin-bottom: 20px
+}
+
+.map__form input[type=tel], .map__form input[type=text] {
+    border-bottom: 1px solid #000;
+    max-width: 100%;
+    color: #000;
+    width: 100%;
+    font-family: AudiTENormal;
+    padding-bottom: 10px;
+}
+
+.map__form input[type=tel]::-webkit-input-placeholder, .map__form input[type=text]::-webkit-input-placeholder {
+    color: #000;
+    opacity: 1
+}
+
+.map__form input[type=tel]:-moz-placeholder, .map__form input[type=tel]::-moz-placeholder, .map__form input[type=text]:-moz-placeholder, .map__form input[type=text]::-moz-placeholder {
+    color: #000;
+    opacity: 1
+}
+
+.map__form input[type=tel]:-ms-input-placeholder, .map__form input[type=text]:-ms-input-placeholder {
+    color: #000;
+    opacity: 1
+}
+
+.map__form .promo-form .btn {
+    padding-left: 60px;
+    padding-right: 60px;
+
+}
+.map__input--for-btn {
+    text-align: center;
+}
+
+.map__form .form-block__privacy {
+    margin-top: 20px;
+    margin-bottom: 0;
+}
+
+.map__form input[type=checkbox] + label {
+    color: #000
+}
+
+.map__form input[type=checkbox] + label a {
+    color: #000;
+    text-decoration: underline
+}
+
+.single-contact-mob {
+    display: none
+}
+
+@media (max-width: 767px) {
+    .single-contact-mob {
+        display: block
+    }
+}
+
+.single-contact-mob__link {
+    display: inline-block;
+    bottom: 0;
+    padding: 0;
+    margin: 0;
+    padding-top: 8px;
+    color: #bd1237;
+    text-decoration: underline
+}

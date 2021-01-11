@@ -1,0 +1,133 @@
+.single-contact {
+    margin: 60px 0 100px
+}
+
+.single-contact_head {
+    margin: 0
+}
+
+.single-contact_head, .single-contact_head .red {
+    font-family: AudiTEBold;
+    font-size: 30px
+}
+
+.single-contact_head .red {
+    color: $audi_red
+}
+
+.single-contact_subhead {
+    font-family: AudiTENormal;
+    font-size: 19px;
+    margin-top: 20px;
+    margin-bottom: 50px
+}
+
+.single-contact__icon:before {
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 10px;
+    float: left
+}
+
+.single-contact__address, .single-contact__phone, .single-contact__promo {
+    display: block
+}
+
+.single-contact__address {
+    font-family: AudiTNormal;
+    font-size: 16px;
+    margin-bottom: 50px;
+    line-height: 1.5
+}
+
+.single-contact__address:before {
+    content: url("../img/poi-small.png")
+}
+
+.single-contact__phone {
+    font-family: AudiTENormal;
+    font-size: 22px;
+    margin-bottom: 10px
+}
+
+.single-contact__phone:before {
+    content: url("../img/phone_big.png")
+}
+
+.single-contact__promo {
+    font-family: AudiTNormal;
+    font-size: 16px;
+    margin-left: 20px
+}
+
+.single-contact__button-group {
+    margin-top: 15px
+}
+
+.single-contact__button__container {
+    display: flex
+}
+
+.single-contact__button__container .btn {
+    text-align: center;
+    width: 100%
+}
+
+.single-contact__right {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center
+}
+
+.single-contact__right > div {
+    width: 500px;
+    height: 400px
+}
+
+@media (max-width: 1199.98px) {
+    .single-contact {
+        margin-bottom: 70px
+    }
+    .single-contact__right {
+        display: block
+    }
+    .single-contact__right > div {
+        margin-top: 20px;
+        width: 100%;
+        height: 400px
+    }
+    .single-contact_head {
+        font-size: 15px
+    }
+    .single-contact_head .red {
+        font-size: inherit
+    }
+    .single-contact_subhead {
+        font-size: 15px;
+        font-weight: 400;
+        margin: 5px 0 18px;
+    }
+    .single-contact__address, .single-contact__promo {
+        font-size: 12px
+    }
+    .single-contact__address, .single-contact__promo, .single-contact_subhead {
+        margin-bottom: 30px
+    }
+    .single-contact__phone {
+        font-size: 16px
+    }
+    .single-contact__button-group {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between
+    }
+    .single-contact__button__container {
+        // flex-basis: 48%
+        flex-wrap: wrap;
+        width: 100%;
+    }
+    .single-contact__button__container .btn {
+        margin-bottom: 10px;
+    }
+}

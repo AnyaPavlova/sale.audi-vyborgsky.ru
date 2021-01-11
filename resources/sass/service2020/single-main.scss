@@ -1,0 +1,107 @@
+.single-main {
+  padding: 58px 0 120px;
+
+  @media (max-width: 991px) {
+    padding-bottom: 70px;
+  }
+  @media (max-width: 670px) {
+    padding-bottom: 10px;
+  }
+  
+  &__row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-left: -2px;
+    margin-right: -2px;
+  }
+  &__col {
+    padding-left: 2px;
+    padding-right: 2px;
+  }
+  &__col-info {
+    width: 41.66%;
+
+    @media (max-width: 991px) {
+      width: 50%;
+    }
+    @media (max-width: 670px) {
+      width: 100%;
+      order: 1;
+    }
+  }
+  &__col-form {
+    width: 50%;
+
+    @media (max-width: 670px) {
+      width: 100%;
+    }
+  }
+
+  &__text-block {
+    padding-top: 62px;
+    padding-right: 30px;
+
+    @media (max-width: 670px) {
+      padding-top: 60px;
+      padding-right: 0;
+    }
+  }
+  &__text {
+    font-size: 20px;
+    line-height: 2;
+    padding: 0 0 10px;
+    margin: 0;
+
+    @media (max-width: 670px) {
+      font-size: 18px;
+    }
+  }
+
+  &__form {
+    display: block;
+    width: calc( 100% - 15px );
+    box-shadow: 0px 20px 50px rgba(0, 0, 0, 0.1);
+    padding: 65px 53px;
+
+    .inline__header-h {
+      letter-spacing: -0.01em;      
+      padding-bottom: 20px;
+      text-align: left;
+
+      @media (max-width: 670px) {
+        text-align: center;
+      }
+    }
+
+    @media (max-width: 670px) {
+      padding: 0;
+      width: 100%;
+      box-shadow: none;
+    }
+    .question__text {
+      @media (max-width: 670px) {
+        padding: 0 18px;
+        font-size: 13px;
+        line-height: 1.5;
+        text-align: center;
+        margin-bottom: 27px;
+      }
+    }
+    .single-main__label-tel {
+      @media (max-width: 670px) {
+        font-family: AudiTENormal;
+        font-size: 13px;
+        text-align: center;
+      }
+    }
+  }
+  &__input[type=tel] {
+    padding: 10px 0;
+
+    @media (max-width: 670px) {
+      text-align: center;
+    }
+  }
+
+}
