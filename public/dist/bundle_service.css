@@ -10317,6 +10317,7 @@ input[type=checkbox]:not(:checked) + label:before {
   color: #fff;
   /*background-color: transparent;*/
   border: 1px solid #fff;
+  text-align: center;
 }
 
 .special-offers__link:hover {
