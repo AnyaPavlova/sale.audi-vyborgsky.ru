@@ -29,5 +29,13 @@
       line-height: 1.45;
       text-align: left;
     }
+
+    span {
+      display: block;
+
+      @media (max-width: 1199.98px) {
+        display: inline;
+      }
+    }
   }
 }
