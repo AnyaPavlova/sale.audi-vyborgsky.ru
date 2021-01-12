@@ -31,6 +31,10 @@
       font-size: inherit;
       color: inherit;
       text-decoration: underline;
+
+      @media (max-width: 670px) {
+        text-decoration: none;
+      }
     }
   }
 }
