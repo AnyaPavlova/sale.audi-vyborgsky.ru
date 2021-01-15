@@ -14924,6 +14924,18 @@ input[type=checkbox]:not(:checked) + label:before {
   }
 }
 
+.new-model__info-inner--only-photo {
+  justify-content: center;
+}
+@media (max-width: 670px) {
+  .new-model__info-inner--only-photo {
+    border-top: 0;
+  }
+}
+.new-model__info-inner--only-photo .new-model__btns-block {
+  text-align: center;
+}
+
 .about-new-model {
   padding: 50px 0;
 }

@@ -127,3 +127,15 @@
   }
 
 }
+
+.new-model__info-inner--only-photo {
+  justify-content: center;
+
+  @media (max-width: 670px) {
+    border-top: 0;
+  }
+
+  .new-model__btns-block {
+    text-align: center;
+  }
+}
