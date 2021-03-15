@@ -1,5 +1,6 @@
 .header {
-  padding: 19px 0;
+  // padding: 19px 0;
+  padding: 13px 0;
 }
 .header__content {
   justify-content: space-between;
@@ -49,29 +50,43 @@
   // margin: auto;
   // background: url("../img/phone.png") no-repeat;
   // background-size: contain;
-      content: "";
-    width: 30px;
-    height: 30px;
-    left: -35px;
-    top: -10px;
-    bottom: 0;
-    margin: auto;
-    background: url(../img/phone-red.png) no-repeat;
-    background-size: contain;
-}
-.header__item-map:before {
-  content: '';
-  content: '';
-  width: 13px;
+    //   content: "";
+    // width: 30px;
+    // height: 30px;
+    // left: -35px;
+    // top: -10px;
+    // bottom: 0;
+    // margin: auto;
+    // background: url(../img/phone-red.png) no-repeat;
+    // background-size: contain;
+    content: '';
+  width: 8px;
   height: 13px;
   left: -15px;
   top: 0; bottom: 0;
   margin: auto;
-  background: url("../img/poi-small.png") no-repeat;
+  background: url("../img/Phone-gray.svg") no-repeat;
+  background-size: contain;
+}
+.header__item-map:before {
+  content: '';
+  content: '';
+  // width: 13px;
+  // height: 13px;
+  width: 9px;
+  height: 13px;
+  left: -15px;
+  top: 0; bottom: 0;
+  margin: auto;
+  // background: url("../img/poi-small.png") no-repeat;
+  background: url("../img/Map-gray.svg") no-repeat;
   background-size: contain;
 }
 .header__small {
-  color: #707070;
+  color: #808080;
+  padding-bottom: 3px;
+  font-size: 12px;
+  font-weight: 300;
 
   &--black {
     color: #000000;
@@ -79,8 +94,10 @@
 }
 .header__icon {
   font-size: 15px;
-  letter-spacing: -0.01em;
+  // letter-spacing: -0.01em;
+  // font-weight: 700;
   font-weight: 700;
+  font-family: Audi Type Screen;
 }
 .header__logo {
   font-size: 15px;
@@ -206,4 +223,11 @@
   @media (max-width: 1199.98px)  {
     display: block;
   }
+}
+
+.award-block {
+  display: flex;
+  flex-wrap: wrap;
+  min-width: 190px;
+  justify-content: space-between;
 }
