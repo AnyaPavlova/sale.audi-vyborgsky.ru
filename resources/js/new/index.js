@@ -16,7 +16,6 @@ $(window).scroll(() => {
     $('header').css({position: 'fixed', top: '0px', left: '0px', right: '0px', margin: '0 auto'});
 
     var headerHeight = document.querySelector('.header').clientHeight;
-    console.log(headerHeight);
     $('.mob-menu-nav').css({position: 'fixed', top: headerHeight, left: '0px', right: '0px', margin: '0 auto'});
   } else {
     $('header').css({position: 'static'});

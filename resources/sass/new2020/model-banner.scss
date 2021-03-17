@@ -39,8 +39,8 @@
   font-size: 35px;
   line-height: 40px;
 }
-.model-banner--no-text .model-banner__title {
-  opacity: 0;
+.model-banner__title {
+  display: none;
 }
 .model-banner__subtitle {
   font-size: 28px;
@@ -63,7 +63,7 @@
         bottom: auto;
         left: auto;
         right: auto;
-        margin-top: -50px
+        // margin-top: -50px
     }
   .model-banner__info  {
     position: relative;
@@ -82,6 +82,7 @@
     bottom: auto;
   }
   .model-banner__title {
+    display: block;
     position: relative;
     left: auto;
     top: auto;

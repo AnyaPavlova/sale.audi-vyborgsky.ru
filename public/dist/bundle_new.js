@@ -20768,7 +20768,6 @@ $(window).scroll(function () {
       margin: '0 auto'
     });
     var headerHeight = document.querySelector('.header').clientHeight;
-    console.log(headerHeight);
     $('.mob-menu-nav').css({
       position: 'fixed',
       top: headerHeight,

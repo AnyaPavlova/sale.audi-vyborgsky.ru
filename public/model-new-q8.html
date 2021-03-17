@@ -33,21 +33,31 @@
                         </div>
                     </a>
                 </div>
-                <div class="header__item header__btn-block">
+                <!-- <div class="header__item header__btn-block">
                     <button data-src="#callback" data-fancybox="" class="header__btn-call">Обратный звонок</button>
-                </div>
+                </div> -->
                 <div class="header__item header__address">
-                    <small class="header__small header__small--black">Официальный дилер Audi</small>
+                    <small class="header__small">Официальный дилер Audi</small>
                     <a href="https://sale.audi-vyborgsky.ru/#" class="header__item-map header__icon">Выборгское шоссе, д.
                         352 лит. А</a>
                 </div>
-                <div class="header__item header__cars">
+                <!-- <div class="header__item header__cars">
                     <small class="header__small">Всего в наличии:</small>
                     <a href="https://sale.audi-vyborgsky.ru/#" class="header__item-cars header__icon">345 автомобилей</a>
-                </div>
+                </div> -->
                 <div class="header__item header__phone">
                     <small class="header__small">с 9:00 до 21:00</small>
                     <a href="tel:+78125011334" class="header__item-phone header__icon">+7 (812) 501-13-34</a>
+                </div>
+                <div class="header__item header__item--awards">
+                    <div class="award-block">
+                        <div class="award-block__item">
+                            <img src="./img/awards-pic1.png" alt="Awards">
+                        </div>
+                        <div class="award-block__item">
+                            <img src="./img/awards-pic2.png" alt="Awards">
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -62,20 +72,14 @@
                     <span id="burger" class="burger"></span>
                 </div>
 
-            </div>
-            <div class="header-mob__info">
-                <div class="header-mob__block">
-                    <a class="header-mob__btn" target="_blank" href="https://yandex.ru/maps/2/saint-petersburg/?z=10&amp;ll=30.350098%2C59.955797&amp;l=map&amp;origin=jsapi_2_1_56&amp;from=api-maps&amp;um=constructor%3Af5815019cca57f289da79a7df1f581457df563ea9740ddfa6f47acc9c4a17f68&amp;mode=routes&amp;rtext=~60.094032%2C30.254255&amp;rtt=auto">Проложить маршрут</a>
-                    <div class="header__item header__phone">
-                        <small class="header__small">с 9:00 до 21:00</small>
-                        <!-- <a href="tel:+78125011334" class="header__item-phone header__icon">+7 (812) 501-13-34</a> -->
-                    </div>
-                </div>
-            </div>
-
+            </div>    
         </div>
     </header>
     <div class="mob-menu-nav">
+        <div class="mob-menu-nav__top-info">
+            <div class="mob-menu-nav__top-name">Ауди Центр Выборгский</div>
+            <div class="mob-menu-nav__top-clock">с 9:00 до 21:00</div>
+        </div>
         <ul class="mob-menu-nav__list">
             <li class="mob-menu-nav__item"><a href="index.html" class="mob-menu-nav__link">Главная страница</a></li>
             <li class="mob-menu-nav__item">
@@ -106,6 +110,18 @@
             </li>
             <li class="mob-menu-nav__item"><a href="#contacts" class="mob-menu-nav__link link-anchor">Контакты</a></li>            
         </ul>
+        <div class="mob-menu-nav__adress"><a href="https://sale.audi-vyborgsky.ru/#" class="header__item-map header__icon">Выборгское шоссе, д. 352 лит. А</a></div>
+        <div class="mob-menu-van__phone-mob-block"><a href="tel:+78125011334" class="mob-menu-van__phone-mob">+7 (812) 501-13-34</a></div>
+        <div class="mob-menu-nav__for-btns-block">
+            <div class="mob-menu-nav__btns-block">
+                <div class="mob-menu-nav__btn-item">
+                    <button data-fancybox="" data-src="#callback" class="btn mob-menu-nav__btn mob-menu-nav__btn--call">Обратный звонок</button>
+                </div>
+                <div class="mob-menu-nav__btn-item">
+                    <a class="btn mob-menu-nav__btn mob-menu-nav__btn--yandex" target="_blank" href="https://yandex.ru/maps/2/saint-petersburg/?z=10&amp;ll=30.350098%2C59.955797&amp;l=map&amp;origin=jsapi_2_1_56&amp;from=api-maps&amp;um=constructor%3Af5815019cca57f289da79a7df1f581457df563ea9740ddfa6f47acc9c4a17f68&amp;mode=routes&amp;rtext=~60.094032%2C30.254255&amp;rtt=auto">Проложить маршрут</a>
+                </div>     
+            </div>
+        </div>
     </div>
 <section class="models-block">
         <div class="model-menu">
@@ -138,25 +154,69 @@
         </div>
     </section>
 
-<section class="new-model">
-    <div class="new-model__inner">
-        <div class="new-model__picture">
-            <picture>
-                <source srcset="./image/new-models/Audi-RS-Q8_720x900.jpg" media="(max-width: 576px)">
-                <source srcset="./image/new-models/Audi-RS-Q8_768x680.jpg" media="(max-width: 800px)">
-                <source srcset="./image/new-models/Audi-RS-Q8_1280x690.jpg" media="(max-width: 1280px)">
-                <source srcset="./image/new-models/Audi-RS-Q8_1920x690.jpg">
-                <img src="./image/new-models/Audi-RS-Q8_1920x690.jpg" alt="Photo min 1920x690px / 3840x1380px" class="new-model__photo">
-            </picture>
+<section class="model-banner">
+
+        <div class="item__carousel model-banner__item">
+            
+            <div class="new-model__picture">
+                <picture>
+                    <source srcset="./image/new-models/Audi-RS-Q8_720x900.jpg" media="(max-width: 576px)">
+                    <source srcset="./image/new-models/Audi-RS-Q8_768x680.jpg" media="(max-width: 800px)">
+                    <source srcset="./image/new-models/Audi-RS-Q8_1280x690.jpg" media="(max-width: 1280px)">
+                    <source srcset="./image/new-models/Audi-RS-Q8_1920x690.jpg">
+                    <img src="./image/new-models/Audi-RS-Q8_1920x690.jpg" alt="Photo min 1920x690px / 3840x1380px" class="new-model__photo">
+                </picture>
+            </div>
+          <div class="model-banner__title">
+                <h1 class="model-banner__maintitle">Обновленный AUDI A4 <br>уже в нашем шоу-руме</h1>
+                <h2 class="model-banner__subtitle">Бонус по программе трейнд-ин <span>до 100 000</span> рублей</h2>
+                <button data-fancybox="" data-src="#callback" class="btn btn-black model-banner__btn-ipad-order">Забронировать онлайн</button>
+            </div>
+          <div class="model-banner__info">
+            <div class="inner-all">
+
+                <div class="model-banner__bottom-block">
+                    <div class="row">
+                        <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6 col-6 model-banner__bonus-item">
+                            <button data-fancybox="" data-src="#callback" class="btn btn-black model-banner__desc-btn">Получить спецпредложение</button>
+                            <!-- <div data-fancybox="" data-src="#callback" class="promo-num promo-num--availability promo-num--line">
+                                <span class="promo-num__digit">21</span>
+                                <span class="promo-num__text">Автомобиль в наличии</span>
+                            </div> -->
+                            <div class="model-banner__ipad-title">Выгоды <br>на автомобили</div>
+                        </div>
+                        <div class="col-xl-4 col-lg-4 col-md-5 col-sm-6 col-6 model-banner__bonus-item">
+                            <div data-fancybox="" data-src="#callback" class="promo-num promo-num--tradein promo-num--line">
+                                <span class="promo-num__digit">110 000 рублей</span>
+                                <span class="promo-num__text">Бонус по программе трейд-ин <sup>2</sup>
+                                </span>
+                            </div>
+                        </div>
+                        <!-- <div class="col-xl-3 col-lg-3 col-md-3 col-sm-6 col-6 model-banner__bonus-item">
+                            <div data-fancybox="" data-src="#callback" class="promo-num promo-num--casco promo-num--line">
+                                <span class="promo-num__digit">9900 рублей</span>
+                                <span class="promo-num__text">каско Audi лайт <sup>4</sup>
+                                </span>
+                            </div>
+                        </div> -->
+                        <div data-fancybox="" data-src="#callback" class="col-xl-2 col-lg-2 col-md-3 col-sm-6 col-6 model-banner__bonus-item">
+                            <div class="promo-num promo-num--years promo-num--line">
+                                <span class="promo-num__digit">4</span>
+                                <span class="promo-num__text">Года гарантии<sup>5</sup>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
         </div>
-        <div class="new-model__info">
-            <div class="new-model__info-inner new-model__info-inner--only-photo">
-                <!-- <div class="new-model__text-block">
-                    <h1 class="new-model__title">Новый Audi RS Q8</h1>
-                    <h2 class="new-model__subtitle">Audi Sport – высшая лига скорости</h2>
-                </div> -->
-                <div class="new-model__btns-block">
-                    <button data-src="#callback" data-additional="Заказ" data-fancybox="" class="btn new-model__btn">Забронировать онлайн</button>
+        <div class="mob-btns">
+            <div class="inner">
+                <div class="mob-btns__block">
+                    <div class="mob-btns__item"><span class="mob-btns__link" data-fancybox="" data-src="#callback">Узнать финальную цену</span></div>
+                    <div class="mob-btns__item"><span class="mob-btns__link" data-fancybox="" data-src="#callback">100 000 рублей бонус по программе трейд-ин<sup>2</sup></span></div>
+                    <div class="mob-btns__item"><span class="mob-btns__link" data-fancybox="" data-src="#callback">4 года гарантии<sup>4</sup></span></div>
                 </div>
             </div>
         </div>
