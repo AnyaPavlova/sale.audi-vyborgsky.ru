@@ -246,3 +246,19 @@
   min-width: 190px;
   justify-content: space-between;
 }
+
+@media (max-width: 576px) {
+  .header-mob__phone {
+    display: none;
+  }
+  .header__logo-mob {
+    max-width: 72px;
+  }
+  .header {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .header__audi-name-mob {
+    display: none;
+  }
+}

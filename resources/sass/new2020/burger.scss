@@ -3,7 +3,7 @@
 
   @media (max-width: 1199.98px) {
     display: block;
-    width: 16px;
+    width: 22px;
     height: 13px;
     background: url(../img/icons/burger.png) no-repeat;
     position: absolute;
@@ -13,5 +13,8 @@
     &--open {
       background: url(../img/icons/close.png) no-repeat right top;
     }
+  }
+  @media (max-width: 576px) {
+    top: 7px;
   }
 }
