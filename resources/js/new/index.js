@@ -14,7 +14,7 @@ var HeaderTop = $('header').offset().top;
 $(window).scroll(() => {
   if ($(window).scrollTop() > HeaderTop) {
     $('header').css({position: 'fixed', top: '0px', left: '0px', right: '0px', margin: '0 auto'});
-    $('.mob-menu-nav').css({position: 'fixed', top: '116px', left: '0px', right: '0px', margin: '0 auto'});
+    $('.mob-menu-nav').css({position: 'fixed', top: '58px', left: '0px', right: '0px', margin: '0 auto'});
   } else {
     $('header').css({position: 'static'});
     $('.mob-menu-nav').css({position: 'static'});
@@ -24,7 +24,7 @@ $(window).scroll(() => {
 var burger = document.querySelector('.burger');
 burger.addEventListener('click', MobBurger);
 function MobBurger(event) {
-  $('.header-mob__info').slideToggle('300');
+  // $('.header-mob__info').slideToggle('300');
   $('.mob-menu-nav').slideToggle('300');
   $('.burger')[0].classList.toggle('burger--open');
 }
@@ -48,6 +48,7 @@ $('.link-anchor').on("click", function (e) {
   if ($(window).scrollTop() > HeaderTop) {
     var positionblock = $(mylink).offset().top - 60;
   } else {
+    var positionblock = $(mylink).offset().top - $('.header').outerHeight() - $('.mob-menu-nav').outerHeight() - 60;
     var positionblock = $(mylink).offset().top - $('.header').outerHeight() - $('.mob-menu-nav').outerHeight() - 60;
   }
   $('html, body').animate({ scrollTop: positionblock }, 1100);

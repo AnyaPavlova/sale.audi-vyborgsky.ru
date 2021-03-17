@@ -47,15 +47,45 @@
   font-family: AudiTENormal;
   font-weight: 400;
 }
+.model-banner__ipad-title,
+.model-banner__btn-ipad-order {
+  display: none;
+}
 @media (max-width: 1199.98px) {  
+  .model-banner__item {
+    display: flex;
+    flex-direction: column;
+  }
+  .model-banner__info {
+        position: static;
+        height: auto;
+        top: auto;
+        bottom: auto;
+        left: auto;
+        right: auto;
+        margin-top: -50px
+    }
   .model-banner__info  {
-    display: none;
+    position: relative;
+    background: #000;
+    order: 2;
+  }
+
+  .model-banner__bottom-block {
+    border-top: 0;
+    padding: 15px 23px 17px 23px;
+    width: 100%;
+    position: relative;
+    left: auto;
+    right: auto;
+    top: auto;
+    bottom: auto;
   }
   .model-banner__title {
     position: relative;
     left: auto;
     top: auto;
-    background: #000000;
+    // background: #000000;
     padding: 15px 20px;
     font-size: 21px;
     line-height: 23px;
@@ -63,32 +93,64 @@
     color: #ffffff;
     margin: 0;
     width: 100%;
+
+    order: 3;
+    padding-bottom: 50px;
   }
   .model-banner__maintitle {
-    font-size: 21px;
-    line-height: 23px;
+    // font-size: 21px;
+    // line-height: 23px;
+    color: #000;
+    font-size: 33px;
+    line-height: 1.3;
+    padding-bottom: 18px;
+    margin-bottom: 0;
   }
   .model-banner--no-text .model-banner__title {
     position: absolute;
   }
   .model-banner__subtitle {
     font-size: 18px;
-    font-family: AudiTENormal;
+    // font-family: AudiTENormal;
   font-weight: 400;
   text-align: left;
-  margin-bottom: 10px;
+  margin-bottom: 35px;
+  color: #000;  
+  font-family: AudiTNormal;
+  }
+  .model-banner__subtitle span {
+    white-space: nowrap;
+  }
+  .model-banner__desc-btn {
+    display: none;
+  }
+  .model-banner__ipad-title {
+    display: block;
+    font-size: 18px;
+    color: #fff;
+    display: flex;
+    height: 100%;
+    align-content: center;
+    align-items: center;
+        font-family: AudiTENormal;
+  }
+  .model-banner__btn-ipad-order {
+    display: inline-block;
+    font-size: 20px;
+    line-height: 1.2;
+    padding: 20px 53px;
   }
 }
 @media (max-width: 1000px) {
-  .model-banner__item {
-    display: flex;
-    flex-direction: column;
-  }
+  
   .model-banner__bg {
     order: 1;
   }
 }
 @media (max-width: 576px)  {
+  .model-banner__info  {
+    display: none;
+  }
   .model-banner__bg {
     display: none;
   }
@@ -104,12 +166,13 @@
   .model-banner__title {
     font-size: 14px;
     line-height: 14px;
-    padding: 15px 10px;
+    // padding: 15px 10px;
     text-align: center;
+    padding: 30px 20px;
   }
   .model-banner__maintitle {
-    font-size: 14px;
-    line-height: 14px;
+    font-size: 20px;
+    line-height: 1.4;
     margin-top: 0;
   }
   .model-banner--no-text .model-banner__title {
@@ -117,13 +180,20 @@
     opacity: 1;
   }
   .model-banner__subtitle  {
-    font-size: 12px;
+    font-size: 18px;
     text-align: center;
-    margin-bottom: 0;
+    margin-bottom: 40px;
   }
 
   .model-banner__item {
     display: flex;
     flex-direction: column;
+  }
+  .model-banner__title {
+    order: 4;
+  }
+  .model-banner__btn-ipad-order {
+    padding: 20px;
+    width: 100%;
   }
 }

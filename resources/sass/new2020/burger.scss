@@ -6,6 +6,9 @@
     width: 16px;
     height: 13px;
     background: url(../img/icons/burger.png) no-repeat;
+    position: absolute;
+    right: 0;
+    top: 10px;
 
     &--open {
       background: url(../img/icons/close.png) no-repeat right top;
